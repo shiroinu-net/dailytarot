@@ -87,6 +87,28 @@
       box-shadow: 0 4px 24px rgba(0,0,0,0.10), 0 1px 4px rgba(0,0,0,0.06);
     }
 
+    .card-svg-wrap.reversed svg {
+      transform: rotate(180deg);
+    }
+
+    .card-position {
+      display: inline-block;
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      padding: 3px 12px;
+      border-radius: 20px;
+    }
+
+    .card-position.upright {
+      background: #eaf3ee;
+      color: #3a8a5a;
+    }
+
+    .card-position.reversed {
+      background: #fdeaea;
+      color: #b84040;
+    }
+
     .card-name-en {
       font-size: 11px;
       letter-spacing: 0.14em;
@@ -98,6 +120,15 @@
       font-weight: 700;
       color: #1a1a1a;
       letter-spacing: 0.06em;
+    }
+
+    .card-meaning {
+      font-size: 12px;
+      color: #999;
+      text-align: center;
+      line-height: 1.65;
+      letter-spacing: 0.04em;
+      max-width: 200px;
     }
 
     /* ── Divider ── */
@@ -192,7 +223,7 @@
     <div class="card-wrap">
       <div class="card-label">POSITION I</div>
       <div class="card-label-jp">状況</div>
-      <div class="card-svg-wrap">
+      <div class="card-svg-wrap reversed">
         <svg width="160" height="260" viewBox="0 0 160 260" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="bg1" x1="0" y1="0" x2="0" y2="1">
@@ -265,8 +296,10 @@
           <text x="80" y="253" text-anchor="middle" font-family="serif" font-size="11" fill="#ffffff55" letter-spacing="3">II</text>
         </svg>
       </div>
+      <div class="card-position reversed">逆位置</div>
       <div class="card-name-en">The High Priestess</div>
       <div class="card-name-jp">女教皇</div>
+      <div class="card-meaning">行動回避・内省過多<br>知っているのに動けない<br>秘めたままでいる選択</div>
     </div>
 
     <!-- Card 2: The Chariot 戦車 -->
@@ -362,8 +395,10 @@
           <text x="80" y="253" text-anchor="middle" font-family="serif" font-size="11" fill="#ffffff55" letter-spacing="2">VII</text>
         </svg>
       </div>
+      <div class="card-position upright">正位置</div>
       <div class="card-name-en">The Chariot</div>
       <div class="card-name-jp">戦車</div>
+      <div class="card-meaning">意志・集中・前進<br>相反するものを制御し<br>目標に向かって突き進む</div>
     </div>
 
     <!-- Card 3: The Sun 太陽 -->
@@ -463,8 +498,10 @@
           <text x="80" y="253" text-anchor="middle" font-family="serif" font-size="11" fill="#80400070" letter-spacing="1">XIX</text>
         </svg>
       </div>
+      <div class="card-position upright">正位置</div>
       <div class="card-name-en">The Sun</div>
       <div class="card-name-jp">太陽</div>
+      <div class="card-meaning">喜び・活力・輝き<br>隠さず表現すること<br>今この瞬間に光を当てる</div>
     </div>
 
   </div><!-- /cards-row -->
@@ -480,8 +517,8 @@
 
       <div class="reading-item">
         <div class="reading-role">状況 — Position I</div>
-        <div class="reading-card-name">女教皇 / The High Priestess</div>
-        <div class="reading-text">「まだ出す時じゃない」と感じているとしたら、それは本当に直感なのか、それとも<strong>守りに入っているだけではないか</strong>。女教皇は今、あなたの音楽が内側で熟成中であることを示しています。ただし、いつまでも「準備中」でいることの居心地よさには気をつけて。</div>
+        <div class="reading-card-name">女教皇（逆位置）/ The High Priestess Rx</div>
+        <div class="reading-text">「まだ出す時じゃない」と感じているとしたら、それは本当に直感なのか、それとも<strong>守りに入っているだけではないか</strong>。逆位置の女教皇は、知っているのに動かない・秘めたまま手放せない状態を示します。いつまでも「準備中」でいることの居心地よさには、気をつけて。</div>
       </div>
 
       <div class="reading-item">
@@ -503,8 +540,8 @@
 
       <div class="reading-item">
         <div class="reading-role">状況 — Position I</div>
-        <div class="reading-card-name">女教皇 / The High Priestess</div>
-        <div class="reading-text">「なんとなく続けている習慣」の中に、<strong>本当はもう手放してもいいものが混ざっていないか</strong>。女教皇は見て見ぬふりをしているものを照らし出します。朝、犬と外に出たとき体がどう感じているか、そこに答えがあるかもしれません。</div>
+        <div class="reading-card-name">女教皇（逆位置）/ The High Priestess Rx</div>
+        <div class="reading-text">「なんとなく続けている習慣」の中に、<strong>本当はもう手放してもいいものが混ざっていないか</strong>。逆位置の女教皇は、自分の体のサインを無視しがちな状態を示します。朝、犬と外に出たとき体がどう感じているか、そこに答えがあるかもしれません。</div>
       </div>
 
       <div class="reading-item">
@@ -526,8 +563,8 @@
 
       <div class="reading-item">
         <div class="reading-role">状況 — Position I</div>
-        <div class="reading-card-name">女教皇 / The High Priestess</div>
-        <div class="reading-text">隣の両親、音楽の仲間、職場の同僚——それぞれに見せている顔が違うことに気づいているはずです。<strong>どの顔が「本当の自分」なのか、少し曖昧になっていませんか</strong>。女教皇はその問いを今日静かに突きつけています。</div>
+        <div class="reading-card-name">女教皇（逆位置）/ The High Priestess Rx</div>
+        <div class="reading-text">隣の両親、音楽の仲間、職場の同僚——それぞれに見せている顔が違うことに気づいているはずです。<strong>どの顔が「本当の自分」なのか、少し曖昧になっていませんか</strong>。逆位置の女教皇は、自分のことを誰にもちゃんと見せていない状態を映し出します。</div>
       </div>
 
       <div class="reading-item">
@@ -549,8 +586,8 @@
 
       <div class="reading-item">
         <div class="reading-role">状況 — Position I</div>
-        <div class="reading-card-name">女教皇 / The High Priestess</div>
-        <div class="reading-text">会社の収入があるから大丈夫、と<strong>思考を止めていることはないでしょうか</strong>。女教皇は水面下で動いているものを見るよう促しています。音楽活動に実際いくらかかっているか、一度ちゃんと数字で確認してみましょう。</div>
+        <div class="reading-card-name">女教皇（逆位置）/ The High Priestess Rx</div>
+        <div class="reading-text">会社の収入があるから大丈夫、と<strong>思考を止めていることはないでしょうか</strong>。逆位置の女教皇は、見えているのに見ないふりをしている数字や事実があることを示します。音楽活動に実際いくらかかっているか、一度ちゃんと確認してみましょう。</div>
       </div>
 
       <div class="reading-item">
