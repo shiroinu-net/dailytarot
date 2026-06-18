@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>タロットリーディング 2026-06-17</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 14px;
+      line-height: 1.8;
+      background: #f9f7f4;
+      color: #2c2c2c;
+      padding: 48px 24px 80px;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+
+    header .date {
+      font-size: 13px;
+      letter-spacing: 0.12em;
+      color: #888;
+      margin-bottom: 12px;
+    }
+
+    header h1 {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: #1a1a1a;
+      margin-bottom: 10px;
+    }
+
+    header .subtitle {
+      font-size: 13px;
+      color: #aaa;
+      letter-spacing: 0.1em;
+    }
+
+    /* ── Cards row ── */
+    .cards-row {
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 64px;
+    }
+
+    .card-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+      flex: 1;
+      min-width: 200px;
+      max-width: 240px;
+    }
+
+    .card-label {
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      color: #999;
+      text-transform: uppercase;
+    }
+
+    .card-label-jp {
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      color: #666;
+      margin-top: 2px;
+    }
+
+    .card-svg-wrap svg {
+      display: block;
+      border-radius: 12px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.10), 0 1px 4px rgba(0,0,0,0.06);
+    }
+
+    .card-svg-wrap.reversed svg {
+      transform: rotate(180deg);
+    }
+
+    .card-position {
+      display: inline-block;
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      padding: 3px 12px;
+      border-radius: 20px;
+    }
+
+    .card-position.upright {
+      background: #eaf3ee;
+      color: #3a8a5a;
+    }
+
+    .card-position.reversed {
+      background: #fdeaea;
+      color: #b84040;
+    }
+
+    .card-name-en {
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      color: #bbb;
+    }
+
+    .card-name-jp {
+      font-size: 15px;
+      font-weight: 700;
+      color: #1a1a1a;
+      letter-spacing: 0.06em;
+    }
+
+    .card-meaning {
+      font-size: 12px;
+      color: #999;
+      text-align: center;
+      line-height: 1.65;
+      letter-spacing: 0.04em;
+      max-width: 200px;
+    }
+
+    /* ── Divider ── */
+    .divider {
+      border: none;
+      border-top: 1px solid #e8e4df;
+      margin: 0 0 56px;
+    }
+
+    /* ── Theme sections ── */
+    .themes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px 48px;
+    }
+
+    @media (max-width: 600px) {
+      .themes { grid-template-columns: 1fr; }
+    }
+
+    .theme-block {
+      background: #fff;
+      border-radius: 12px;
+      padding: 28px 28px 32px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    }
+
+    .theme-title {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      color: #555;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #f0ece8;
+    }
+
+    .theme-title .icon {
+      margin-right: 6px;
+    }
+
+    .reading-item {
+      margin-bottom: 16px;
+    }
+
+    .reading-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .reading-role {
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      color: #bbb;
+      margin-bottom: 3px;
+    }
+
+    .reading-card-name {
+      font-size: 12px;
+      font-weight: 700;
+      color: #888;
+      margin-bottom: 5px;
+    }
+
+    .reading-text {
+      font-size: 14px;
+      color: #3a3a3a;
+      line-height: 1.85;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 72px;
+      font-size: 12px;
+      color: #ccc;
+      letter-spacing: 0.08em;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <div class="date">2026 / 06 / 17</div>
+    <h1>デイリータロットリーディング</h1>
+    <div class="subtitle">Daily Tarot Reading</div>
+  </header>
+
+  <!-- ── 3 Cards ── -->
+  <div class="cards-row">
+
+    <!-- Card 1: Wheel of Fortune 運命の輪 — upright -->
+    <div class="card-wrap">
+      <div class="card-label">POSITION I</div>
+      <div class="card-label-jp">状況</div>
+      <div class="card-svg-wrap">
+        <svg width="160" height="260" viewBox="0 0 160 260" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="bg_wof" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#1a0e48"/>
+              <stop offset="100%" stop-color="#0c0828"/>
+            </linearGradient>
+          </defs>
+          <rect width="160" height="260" rx="12" fill="url(#bg_wof)"/>
+          <rect x="8" y="8" width="144" height="244" rx="9" fill="none" stroke="#ffffff12" stroke-width="1"/>
+
+          <!-- corner clouds with living creatures -->
+          <ellipse cx="22" cy="22" rx="14" ry="10" fill="#2a2260" opacity="0.8"/>
+          <ellipse cx="138" cy="22" rx="14" ry="10" fill="#2a2260" opacity="0.8"/>
+          <ellipse cx="22" cy="238" rx="14" ry="10" fill="#2a2260" opacity="0.8"/>
+          <ellipse cx="138" cy="238" rx="14" ry="10" fill="#2a2260" opacity="0.8"/>
+          <!-- Angel top-left -->
+          <circle cx="22" cy="20" r="5" fill="#f0e8d0" opacity="0.75"/>
+          <path d="M15 17 Q18 11 22 14 Q26 11 29 17" fill="#e8d8a0" opacity="0.65"/>
+          <!-- Eagle top-right -->
+          <path d="M132 16 Q138 11 144 16 Q141 21 138 19 Q135 21 132 16Z" fill="#d0c890" opacity="0.7"/>
+          <!-- Lion bottom-left -->
+          <circle cx="22" cy="237" r="5.5" fill="#d8a840" opacity="0.65"/>
+          <path d="M15 233 Q18 228 22 231 Q26 228 29 233" fill="#c89030" opacity="0.55"/>
+          <!-- Bull bottom-right -->
+          <ellipse cx="138" cy="238" rx="6" ry="5" fill="#c8b080" opacity="0.65"/>
+          <path d="M133 234 Q135 229 138 232 Q141 229 143 234" fill="#b89870" opacity="0.55"/>
+
+          <!-- Outer wheel ring -->
+          <circle cx="80" cy="126" r="57" fill="none" stroke="#d4a820" stroke-width="2.5"/>
+          <!-- Inner ring -->
+          <circle cx="80" cy="126" r="42" fill="none" stroke="#b88810" stroke-width="1.5"/>
+          <!-- Center hub -->
+          <circle cx="80" cy="126" r="18" fill="#1e0e50" stroke="#d4a820" stroke-width="1.5"/>
+          <!-- hub symbol (wheel cross) -->
+          <circle cx="80" cy="126" r="5.5" fill="#d4a820" opacity="0.55"/>
+          <line x1="80" y1="120" x2="80" y2="132" stroke="#d4a820" stroke-width="1.2" opacity="0.7"/>
+          <line x1="74" y1="126" x2="86" y2="126" stroke="#d4a820" stroke-width="1.2" opacity="0.7"/>
+
+          <!-- 8 spokes -->
+          <line x1="80" y1="69" x2="80" y2="183" stroke="#b88810" stroke-width="1.5"/>
+          <line x1="23" y1="126" x2="137" y2="126" stroke="#b88810" stroke-width="1.5"/>
+          <line x1="39.7" y1="85.7" x2="120.3" y2="166.3" stroke="#b88810" stroke-width="1.5"/>
+          <line x1="120.3" y1="85.7" x2="39.7" y2="166.3" stroke="#b88810" stroke-width="1.5"/>
+
+          <!-- TARO letters on outer ring -->
+          <text x="80" y="77" text-anchor="middle" font-family="serif" font-size="10" fill="#f0d040">T</text>
+          <text x="130" y="130" text-anchor="middle" font-family="serif" font-size="10" fill="#f0d040">A</text>
+          <text x="80" y="180" text-anchor="middle" font-family="serif" font-size="10" fill="#f0d040">R</text>
+          <text x="30" y="130" text-anchor="middle" font-family="serif" font-size="10" fill="#f0d040">O</text>
+
+          <!-- Alchemical symbols between letters -->
+          <text x="114" y="92" text-anchor="middle" font-family="serif" font-size="9" fill="#a08818">☿</text>
+          <text x="114" y="167" text-anchor="middle" font-family="serif" font-size="9" fill="#a08818">△</text>
+          <text x="46" y="167" text-anchor="middle" font-family="serif" font-size="9" fill="#a08818">▽</text>
+          <text x="46" y="92" text-anchor="middle" font-family="serif" font-size="9" fill="#a08818">⊕</text>
+
+          <!-- Sphinx seated on top of wheel -->
+          <path d="M66 65 Q72 58 80 56 Q88 58 94 65 L92 74 L68 74 Z" fill="#d8c068"/>
+          <circle cx="80" cy="55" r="9.5" fill="#e8d080"/>
+          <path d="M71 52 Q76 46 80 45 Q84 46 89 52" fill="#d4a820" opacity="0.75"/>
+          <line x1="71" y1="55" x2="71" y2="64" stroke="#c09018" stroke-width="1.5" opacity="0.6"/>
+          <line x1="89" y1="55" x2="89" y2="64" stroke="#c09018" stroke-width="1.5" opacity="0.6"/>
+          <ellipse cx="76" cy="53" rx="2" ry="2.5" fill="#8a6820" opacity="0.6"/>
+          <ellipse cx="84" cy="53" rx="2" ry="2.5" fill="#8a6820" opacity="0.6"/>
+
+          <!-- Serpent descending on left (Typhon) -->
+          <path d="M35 100 Q24 112 23 126 Q23 140 29 151 Q33 158 35 165"
+                stroke="#3a7020" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <ellipse cx="37" cy="97" rx="6" ry="5" fill="#3a7020" transform="rotate(-30,37,97)"/>
+          <path d="M33 95 Q35 91 38 93" stroke="#880000" stroke-width="1" fill="none"/>
+
+          <!-- Anubis ascending on right -->
+          <ellipse cx="128" cy="164" rx="7" ry="5.5" fill="#c8a020"/>
+          <path d="M121 166 Q125 172 133 167" fill="#c8a020"/>
+          <path d="M121 168 Q124 160 128 158 Q132 160 135 168 L133 186 L123 186 Z" fill="#a88010"/>
+          <path d="M124 158 Q126 150 130 155" fill="#a88010"/>
+          <line x1="125" y1="186" x2="123" y2="200" stroke="#a88010" stroke-width="3.5" stroke-linecap="round"/>
+          <line x1="131" y1="186" x2="133" y2="200" stroke="#a88010" stroke-width="3.5" stroke-linecap="round"/>
+
+          <!-- Roman numeral X -->
+          <text x="80" y="253" text-anchor="middle" font-family="serif" font-size="11" fill="#ffffff50" letter-spacing="3">X</text>
+        </svg>
+      </div>
+      <div class="card-position upright">正位置</div>
+      <div class="card-name-en">Wheel of Fortune</div>
+      <div class="card-name-jp">運命の輪</div>
+      <div class="card-meaning">転換期・流れの変化<br>予期せぬ動きが始まっている<br>乗るか、乗り遅れるか</div>
+    </div>
+
+    <!-- Card 2: The Moon 月 — reversed -->
+    <div class="card-wrap">
+      <div class="card-label">POSITION II</div>
+      <div class="card-label-jp">課題</div>
+      <div class="card-svg-wrap reversed">
+        <svg width="160" height="260" viewBox="0 0 160 260" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="bg_moon" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#040610"/>
+              <stop offset="100%" stop-color="#0a1030"/>
+            </linearGradient>
+            <radialGradient id="moonglow" cx="50%" cy="20%" r="28%">
+              <stop offset="0%" stop-color="#f4f0c0" stop-opacity="0.65"/>
+              <stop offset="100%" stop-color="#c0b050" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect width="160" height="260" rx="12" fill="url(#bg_moon)"/>
+          <rect x="8" y="8" width="144" height="244" rx="9" fill="none" stroke="#ffffff0c" stroke-width="1"/>
+
+          <!-- background stars -->
+          <circle cx="20" cy="20" r="0.8" fill="#fff" opacity="0.5"/>
+          <circle cx="50" cy="14" r="0.7" fill="#fff" opacity="0.4"/>
+          <circle cx="120" cy="18" r="0.9" fill="#fff" opacity="0.5"/>
+          <circle cx="148" cy="24" r="0.7" fill="#fff" opacity="0.4"/>
+          <circle cx="140" cy="42" r="0.6" fill="#fff" opacity="0.35"/>
+          <circle cx="15" cy="48" r="0.7" fill="#fff" opacity="0.3"/>
+          <circle cx="94" cy="12" r="0.6" fill="#fff" opacity="0.4"/>
+          <circle cx="35" cy="36" r="0.5" fill="#fff" opacity="0.3"/>
+
+          <!-- moon glow -->
+          <circle cx="80" cy="52" r="46" fill="url(#moonglow)"/>
+          <!-- moon disc -->
+          <circle cx="80" cy="52" r="23" fill="#f4f0c0"/>
+          <!-- moon face -->
+          <ellipse cx="73" cy="48" rx="3" ry="3.5" fill="#b8a028"/>
+          <ellipse cx="87" cy="48" rx="3" ry="3.5" fill="#b8a028"/>
+          <path d="M73 57 Q80 63 87 57" stroke="#b8a028" stroke-width="1.5" fill="none"/>
+          <!-- nose -->
+          <path d="M79 52 Q80 55 81 52" stroke="#b8a028" stroke-width="1" fill="none"/>
+          <!-- partial shadow (profile crescent suggestion) -->
+          <path d="M80 29 Q70 36 68 52 Q68 68 80 75" fill="#e0d890" opacity="0.35"/>
+
+          <!-- yod droplets falling from moon -->
+          <ellipse cx="58" cy="79" rx="2" ry="3.5" fill="#d0c030" opacity="0.55"/>
+          <ellipse cx="68" cy="85" rx="1.8" ry="3" fill="#d0c030" opacity="0.5"/>
+          <ellipse cx="80" cy="81" rx="2" ry="3.5" fill="#d0c030" opacity="0.55"/>
+          <ellipse cx="92" cy="85" rx="1.8" ry="3" fill="#d0c030" opacity="0.5"/>
+          <ellipse cx="102" cy="79" rx="2" ry="3.5" fill="#d0c030" opacity="0.55"/>
+
+          <!-- Two towers -->
+          <!-- Left tower -->
+          <rect x="13" y="122" width="30" height="86" fill="#1c2848"/>
+          <rect x="9" y="118" width="38" height="8" rx="2" fill="#243258"/>
+          <rect x="10" y="109" width="8" height="11" fill="#243258"/>
+          <rect x="20" y="109" width="8" height="11" fill="#243258"/>
+          <rect x="30" y="109" width="8" height="11" fill="#243258"/>
+          <rect x="39" y="109" width="8" height="11" fill="#243258"/>
+          <!-- window -->
+          <rect x="21" y="136" width="10" height="14" rx="2" fill="#0c1428"/>
+          <!-- Right tower -->
+          <rect x="117" y="122" width="30" height="86" fill="#1c2848"/>
+          <rect x="113" y="118" width="38" height="8" rx="2" fill="#243258"/>
+          <rect x="113" y="109" width="8" height="11" fill="#243258"/>
+          <rect x="123" y="109" width="8" height="11" fill="#243258"/>
+          <rect x="133" y="109" width="8" height="11" fill="#243258"/>
+          <rect x="141" y="109" width="8" height="11" fill="#243258"/>
+          <!-- window -->
+          <rect x="129" y="136" width="10" height="14" rx="2" fill="#0c1428"/>
+
+          <!-- Path between towers disappearing to horizon -->
+          <path d="M43 208 Q80 196 117 208 L117 242 L43 242 Z" fill="#182414" opacity="0.7"/>
+          <path d="M58 242 Q80 230 102 242" stroke="#2a3820" stroke-width="1" fill="none"/>
+          <path d="M60 228 Q80 220 100 228" stroke="#304030" stroke-width="0.8" fill="none" opacity="0.7"/>
+          <path d="M50 236 Q80 226 110 236" stroke="#304030" stroke-width="0.8" fill="none" opacity="0.5"/>
+
+          <!-- Pool of water -->
+          <ellipse cx="80" cy="244" rx="62" ry="13" fill="#0a1840" opacity="0.9"/>
+          <path d="M22 242 Q51 236 80 242 Q109 248 138 242" stroke="#1a30a0" stroke-width="1" fill="none" opacity="0.55"/>
+
+          <!-- Crayfish emerging from pool -->
+          <ellipse cx="80" cy="239" rx="11" ry="7" fill="#b83030"/>
+          <line x1="69" y1="239" x2="91" y2="239" stroke="#982828" stroke-width="1" opacity="0.6"/>
+          <line x1="70" y1="235" x2="90" y2="235" stroke="#982828" stroke-width="1" opacity="0.6"/>
+          <path d="M69 237 Q61 230 57 234 Q60 239 68 240Z" fill="#b83030"/>
+          <path d="M91 237 Q99 230 103 234 Q100 239 92 240Z" fill="#b83030"/>
+          <line x1="75" y1="232" x2="68" y2="222" stroke="#b83030" stroke-width="1.5"/>
+          <line x1="85" y1="232" x2="92" y2="222" stroke="#b83030" stroke-width="1.5"/>
+          <line x1="73" y1="244" x2="70" y2="250" stroke="#b83030" stroke-width="1.5"/>
+          <line x1="78" y1="246" x2="76" y2="251" stroke="#b83030" stroke-width="1.5"/>
+          <line x1="82" y1="246" x2="84" y2="251" stroke="#b83030" stroke-width="1.5"/>
+          <line x1="87" y1="244" x2="90" y2="250" stroke="#b83030" stroke-width="1.5"/>
+
+          <!-- Dog (domestic) left — howling -->
+          <ellipse cx="34" cy="196" rx="16" ry="10" fill="#3e3418"/>
+          <circle cx="20" cy="188" r="9" fill="#3e3418"/>
+          <path d="M13 185 Q11 193 17 196" fill="#322c12"/>
+          <ellipse cx="13" cy="189" rx="4" ry="3" fill="#281e08"/>
+          <path d="M11 192 Q14 198 18 195" stroke="#1c1408" stroke-width="1.5" fill="none"/>
+          <line x1="28" y1="204" x2="26" y2="216" stroke="#3e3418" stroke-width="4" stroke-linecap="round"/>
+          <path d="M50 192 Q58 183 56 176" stroke="#3e3418" stroke-width="3" fill="none"/>
+
+          <!-- Wolf (wild) right — howling -->
+          <ellipse cx="126" cy="196" rx="16" ry="10" fill="#343230"/>
+          <circle cx="141" cy="187" r="9.5" fill="#343230"/>
+          <path d="M135 182 Q138 174 143 179" fill="#343230"/>
+          <path d="M141 180 Q145 172 149 177" fill="#343230"/>
+          <ellipse cx="148" cy="189" rx="5" ry="3.5" fill="#28261e"/>
+          <path d="M144 193 Q148 200 152 196" stroke="#18160e" stroke-width="1.5" fill="none"/>
+          <line x1="132" y1="204" x2="134" y2="216" stroke="#343230" stroke-width="4" stroke-linecap="round"/>
+          <path d="M110 192 Q102 183 104 176" stroke="#343230" stroke-width="3" fill="none"/>
+
+          <!-- Roman numeral XVIII -->
+          <text x="80" y="257" text-anchor="middle" font-family="serif" font-size="9" fill="#ffffff38" letter-spacing="1">XVIII</text>
+        </svg>
+      </div>
+      <div class="card-position reversed">逆位置</div>
+      <div class="card-name-en">The Moon</div>
+      <div class="card-name-jp">月</div>
+      <div class="card-meaning">霧が晴れ、真実が姿を現す<br>恐怖や幻想が薄らいでいく<br>見えてくるものに、備えよ</div>
+    </div>
+
+    <!-- Card 3: The Star 星 — upright -->
+    <div class="card-wrap">
+      <div class="card-label">POSITION III</div>
+      <div class="card-label-jp">アドバイス</div>
+      <div class="card-svg-wrap">
+        <svg width="160" height="260" viewBox="0 0 160 260" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="bg_star" x1="0" y1="0" x2="0.2" y2="1">
+              <stop offset="0%" stop-color="#080620"/>
+              <stop offset="100%" stop-color="#141c40"/>
+            </linearGradient>
+            <radialGradient id="starglow" cx="50%" cy="29%" r="32%">
+              <stop offset="0%" stop-color="#f8f8e0" stop-opacity="0.7"/>
+              <stop offset="100%" stop-color="#8888c0" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect width="160" height="260" rx="12" fill="url(#bg_star)"/>
+          <rect x="8" y="8" width="144" height="244" rx="9" fill="none" stroke="#ffffff10" stroke-width="1"/>
+
+          <!-- star glow -->
+          <circle cx="80" cy="76" r="52" fill="url(#starglow)"/>
+
+          <!-- Large 8-pointed star -->
+          <polygon points="80,44 85,61 100,52 91,67 108,72 91,77 100,92 85,83 80,100 75,83 60,92 69,77 52,72 69,67 60,52 75,61" fill="#f8e030"/>
+          <!-- inner highlight -->
+          <polygon points="80,50 84,63 96,56 89,69 104,72 89,75 96,88 84,81 80,94 76,81 64,88 71,75 56,72 71,69 64,56 76,63" fill="#fff8a0" opacity="0.45"/>
+
+          <!-- 7 smaller stars -->
+          <polygon points="30,36 31.5,42 38,42 33,46 35,52 30,48 25,52 27,46 22,42 28.5,42" fill="#f8e030" opacity="0.8"/>
+          <polygon points="52,22 53,27 58,27 54,30 56,35 52,32 48,35 50,30 46,27 51,27" fill="#f8e030" opacity="0.72"/>
+          <polygon points="122,28 123,33 128,33 124,36 126,41 122,38 118,41 120,36 116,33 121,33" fill="#f8e030" opacity="0.75"/>
+          <polygon points="147,48 148,52 153,52 150,55 151,60 147,57 143,60 144,55 141,52 146,52" fill="#f8e030" opacity="0.7"/>
+          <polygon points="140,18 141,21 145,21 142,24 143,28 140,26 137,28 138,24 135,21 139,21" fill="#f8e030" opacity="0.65"/>
+          <polygon points="20,60 21,64 25,64 22,67 23,71 20,69 17,71 18,67 15,64 19,64" fill="#f8e030" opacity="0.6"/>
+          <polygon points="110,18 111,22 115,22 112,25 113,29 110,27 107,29 108,25 105,22 109,22" fill="#f8e030" opacity="0.65"/>
+
+          <!-- tiny background stars -->
+          <circle cx="40" cy="52" r="0.8" fill="#fff" opacity="0.4"/>
+          <circle cx="68" cy="16" r="0.7" fill="#fff" opacity="0.5"/>
+          <circle cx="100" cy="44" r="0.8" fill="#fff" opacity="0.35"/>
+          <circle cx="148" cy="74" r="0.7" fill="#fff" opacity="0.4"/>
+          <circle cx="15" cy="30" r="0.6" fill="#fff" opacity="0.35"/>
+          <circle cx="88" cy="14" r="0.7" fill="#fff" opacity="0.4"/>
+
+          <!-- Green land -->
+          <path d="M12 188 Q40 180 80 183 Q120 186 148 180 L148 248 L12 248 Z" fill="#1a3c18"/>
+          <path d="M12 188 Q40 180 80 183 Q120 186 148 180" stroke="#2a5a28" stroke-width="1" fill="none"/>
+
+          <!-- Pool of water (bottom-left) -->
+          <ellipse cx="44" cy="209" rx="33" ry="16" fill="#0a1e48"/>
+          <path d="M15 209 Q30 204 44 209 Q58 214 73 209" stroke="#1838a0" stroke-width="1" fill="none" opacity="0.6"/>
+          <path d="M22 213 Q34 210 46 213" stroke="#2040a0" stroke-width="0.8" fill="none" opacity="0.5"/>
+
+          <!-- Tree on right (ibis tree) -->
+          <line x1="130" y1="180" x2="130" y2="148" stroke="#2a3810" stroke-width="3.5"/>
+          <ellipse cx="130" cy="143" rx="14" ry="9" fill="#2a5428"/>
+          <ellipse cx="120" cy="151" rx="10" ry="7" fill="#245020"/>
+          <ellipse cx="140" cy="151" rx="10" ry="7" fill="#245020"/>
+          <!-- Ibis bird -->
+          <ellipse cx="130" cy="136" rx="5" ry="3.5" fill="#d8d8c8"/>
+          <path d="M135 135 Q142 130 145 133" stroke="#d8d8c8" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <path d="M125 138 Q119 136 117 140" stroke="#d8d8c8" stroke-width="1.5" fill="none"/>
+
+          <!-- Woman figure (kneeling, pouring water) -->
+          <!-- lower body -->
+          <path d="M70 229 Q72 211 75 199 Q80 189 85 199 Q88 211 86 229 Z" fill="#f0d8c0"/>
+          <!-- upper body -->
+          <rect x="72" y="171" width="20" height="32" rx="6" fill="#f0d8c0"/>
+          <!-- head -->
+          <circle cx="82" cy="166" r="10" fill="#f0d8c0"/>
+          <!-- hair -->
+          <path d="M72 163 Q76 154 82 152 Q88 154 92 163" fill="#8a4818" opacity="0.9"/>
+          <path d="M72 163 Q68 171 70 178" stroke="#8a4818" stroke-width="3" fill="none" opacity="0.7"/>
+          <path d="M92 163 Q96 171 94 178" stroke="#8a4818" stroke-width="3" fill="none" opacity="0.7"/>
+
+          <!-- Left arm pouring into pool -->
+          <path d="M72 183 Q62 191 55 202" stroke="#f0d8c0" stroke-width="7" fill="none" stroke-linecap="round"/>
+          <!-- left pitcher -->
+          <path d="M50 202 Q48 197 52 194 Q59 192 63 197 Q65 202 61 205 Z" fill="#d4a020"/>
+          <!-- water stream into pool -->
+          <path d="M50 205 Q47 213 44 220" stroke="#4070c0" stroke-width="2.5" fill="none" opacity="0.65" stroke-linecap="round"/>
+          <path d="M52 207 Q50 214 48 219" stroke="#6090d0" stroke-width="1.5" fill="none" opacity="0.5" stroke-linecap="round"/>
+
+          <!-- Right arm pouring onto land -->
+          <path d="M92 183 Q104 189 112 197" stroke="#f0d8c0" stroke-width="7" fill="none" stroke-linecap="round"/>
+          <!-- right pitcher -->
+          <path d="M113 197 Q119 193 123 196 Q125 201 121 205 Q116 207 112 203 Z" fill="#d4a020"/>
+          <!-- water stream onto ground -->
+          <path d="M119 205 Q119 212 117 217" stroke="#4070c0" stroke-width="2.5" fill="none" opacity="0.65" stroke-linecap="round"/>
+          <path d="M116 206 Q115 213 114 218" stroke="#6090d0" stroke-width="1.5" fill="none" opacity="0.5" stroke-linecap="round"/>
+
+          <!-- Roman numeral XVII -->
+          <text x="80" y="257" text-anchor="middle" font-family="serif" font-size="10" fill="#ffffff45" letter-spacing="1">XVII</text>
+        </svg>
+      </div>
+      <div class="card-position upright">正位置</div>
+      <div class="card-name-en">The Star</div>
+      <div class="card-name-jp">星</div>
+      <div class="card-meaning">希望・回復・創造の泉<br>静かに注ぎ続けることの力<br>試練の後に訪れる本物の光</div>
+    </div>
+
+  </div><!-- /cards-row -->
+
+  <hr class="divider">
+
+  <!-- ── Readings by theme ── -->
+  <div class="themes">
+
+    <!-- 仕事・創作活動 -->
+    <div class="theme-block">
+      <div class="theme-title"><span class="icon">✦</span>仕事・創作活動</div>
+
+      <div class="reading-item">
+        <div class="reading-role">状況 — Position I</div>
+        <div class="reading-card-name">運命の輪（正位置）/ Wheel of Fortune</div>
+        <div class="reading-text">「今はまだそういう時期じゃない」と感じていたとしたら、それは間違いかもしれません。運命の輪が正位置に出たとき、<strong>何かが静かに、しかし確実に動き始めています</strong>。仕事でも音楽でも、流れが変わりつつあることにもう気づいていませんか。乗り遅れるのも、勢いで乗りすぎるのも、同じくらいの損失です。</div>
+      </div>
+
+      <div class="reading-item">
+        <div class="reading-role">課題 — Position II</div>
+        <div class="reading-card-name">月（逆位置）/ The Moon Rx</div>
+        <div class="reading-text">音楽活動で「なんとなくうまくいっていない」「方向性がぼんやりしている」と感じていたなら、逆位置の月はその霧が晴れ始めた合図です。<strong>ただし、見えてくるものは必ずしも都合のいいものとは限りません</strong>。ずっと避けていた現実を直視する勇気を、今日持てますか。</div>
+      </div>
+
+      <div class="reading-item">
+        <div class="reading-role">アドバイス — Position III</div>
+        <div class="reading-card-name">星（正位置）/ The Star</div>
+        <div class="reading-text">星は劇的な行動を求めません。<strong>今日の音楽に、小さな一歩をひとつだけ加えてください</strong>。録音する、歌詞を一行書く、コードを一つ試す——その静かな積み重ねが、本物の光になっていきます。</div>
+      </div>
+    </div>
+
+    <!-- 体調・メンタル -->
+    <div class="theme-block">
+      <div class="theme-title"><span class="icon">✦</span>体調・メンタル</div>
+
+      <div class="reading-item">
+        <div class="reading-role">状況 — Position I</div>
+        <div class="reading-card-name">運命の輪（正位置）/ Wheel of Fortune</div>
+        <div class="reading-text">体調には波があります。今、あなたはその波のどこにいますか。<strong>上がり調子なのか、それとも次の沈み込みの手前なのか</strong>——朝、犬と外に出たとき体がどう感じていたか、正直に思い返してみてください。運命の輪は「気づいてから備える」ためのカードでもあります。</div>
+      </div>
+
+      <div class="reading-item">
+        <div class="reading-role">課題 — Position II</div>
+        <div class="reading-card-name">月（逆位置）/ The Moon Rx</div>
+        <div class="reading-text">「なんとなく続けている習慣」「なんとなく感じる不調」に、そろそろ名前をつける時かもしれません。逆位置の月は、ぼんやりした不安の霧が晴れていく局面。<strong>その霧の正体を知ることは怖いかもしれませんが、知らないままでいる方がずっと消耗します</strong>。</div>
+      </div>
+
+      <div class="reading-item">
+        <div class="reading-role">アドバイス — Position III</div>
+        <div class="reading-card-name">星（正位置）/ The Star</div>
+        <div class="reading-text">星が示す回復は、一気に元気になることではありません。<strong>今日、一つだけ「自分を回復させる」行動をしてください</strong>。早めに寝る、好きな音楽をかけながら食事を作る、犬と少し長めに歩く——小さくていい。それが創作を続けるための体づくりです。</div>
+      </div>
+    </div>
+
+    <!-- 人間関係 -->
+    <div class="theme-block">
+      <div class="theme-title"><span class="icon">✦</span>人間関係</div>
+
+      <div class="reading-item">
+        <div class="reading-role">状況 — Position I</div>
+        <div class="reading-card-name">運命の輪（正位置）/ Wheel of Fortune</div>
+        <div class="reading-text">誰かとの関係が、気づかないうちに変わっています。<strong>「最近この人、前と違う気がする」と感じた相手はいませんか</strong>。それはあなた自身が変わっているからかもしれません。隣の両親との距離感、音楽仲間との関係——輪は静かに回り続けています。</div>
+      </div>
+
+      <div class="reading-item">
+        <div class="reading-role">課題 — Position II</div>
+        <div class="reading-card-name">月（逆位置）/ The Moon Rx</div>
+        <div class="reading-text">「本当のことが言えていない」「相手の気持ちが読めずにいた」——その霧が逆位置の月で少しずつ晴れていきます。<strong>見えてくるものを、恐れずに受け取ってください</strong>。ただし、すぐに動こうとしないこと。まず事実を消化することが先です。</div>
+      </div>
+
+      <div class="reading-item">
+        <div class="reading-role">アドバイス — Position III</div>
+        <div class="reading-card-name">星（正位置）/ The Star</div>
+        <div class="reading-text">すべての関係を修復しようとしなくていい。<strong>今日、一人に短いメッセージを送るだけでいい</strong>。星は完全な輝きより、静かに続く光を大切にします。それだけで十分です。</div>
+      </div>
+    </div>
+
+    <!-- 金運・生活 -->
+    <div class="theme-block">
+      <div class="theme-title"><span class="icon">✦</span>金運・生活</div>
+
+      <div class="reading-item">
+        <div class="reading-role">状況 — Position I</div>
+        <div class="reading-card-name">運命の輪（正位置）/ Wheel of Fortune</div>
+        <div class="reading-text">金運は今、動きがある時期です。<strong>予期しない出費か、思わぬ形での収入か</strong>——どちらかが近づいているかもしれません。今の家計状況を一度俯瞰しておく価値があります。備えることと不安でいることは、まったく別のことです。</div>
+      </div>
+
+      <div class="reading-item">
+        <div class="reading-role">課題 — Position II</div>
+        <div class="reading-card-name">月（逆位置）/ The Moon Rx</div>
+        <div class="reading-text">音楽活動の費用について、「なんとなく使っている」をそろそろ直視する時かもしれません。<strong>機材・レッスン・ライブ費用——実際いくらかかっているか、数字で把握していますか</strong>。逆位置の月は、曖昧にしていた事実が浮かび上がるタイミングです。</div>
+      </div>
+
+      <div class="reading-item">
+        <div class="reading-role">アドバイス — Position III</div>
+        <div class="reading-card-name">星（正位置）/ The Star</div>
+        <div class="reading-text">お金の不安を手放す近道は収入を増やすことではなく、<strong>「何のために使いたいか」を明確にすること</strong>です。今日、音楽活動のためにこれから使いたいものをリストアップしてみましょう。書き出すだけで、視界が変わります。</div>
+      </div>
+    </div>
+
+  </div><!-- /themes -->
+
+  <footer>
+    <p>Daily Tarot Reading &mdash; 2026-06-17</p>
+    <p style="margin-top:6px;">Cards: 運命の輪（正位置）・月（逆位置）・星（正位置）</p>
+  </footer>
+
+</div>
+</body>
+</html>
