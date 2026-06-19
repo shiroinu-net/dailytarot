@@ -48,7 +48,6 @@
       letter-spacing: 0.1em;
     }
 
-    /* ── Cards row ── */
     .cards-row {
       display: flex;
       gap: 24px;
@@ -131,14 +130,12 @@
       max-width: 200px;
     }
 
-    /* ── Divider ── */
     .divider {
       border: none;
       border-top: 1px solid #e8e4df;
       margin: 0 0 56px;
     }
 
-    /* ── Theme sections ── */
     .themes {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -216,252 +213,163 @@
     <div class="subtitle">Daily Tarot Reading</div>
   </header>
 
-  <!-- ── 3 Cards ── -->
   <div class="cards-row">
 
-    <!-- Card 1: The Moon 月 逆位置 -->
+    <!-- Card 1: The Star 星 正位置 -->
     <div class="card-wrap">
       <div class="card-label">POSITION I</div>
       <div class="card-label-jp">状況</div>
-      <div class="card-svg-wrap reversed">
-        <svg width="160" height="260" viewBox="0 0 160 260" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="bg1" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#060918"/>
-              <stop offset="100%" stop-color="#0c1228"/>
-            </linearGradient>
-            <radialGradient id="moonGlow1" cx="50%" cy="30%" r="38%">
-              <stop offset="0%" stop-color="#fffce0" stop-opacity="0.55"/>
-              <stop offset="100%" stop-color="#060918" stop-opacity="0"/>
-            </radialGradient>
-          </defs>
-          <!-- background -->
-          <rect width="160" height="260" rx="12" fill="url(#bg1)"/>
-          <rect x="8" y="8" width="144" height="244" rx="9" fill="none" stroke="#ffffff10" stroke-width="1"/>
-          <!-- moon glow -->
-          <ellipse cx="80" cy="78" rx="58" ry="48" fill="url(#moonGlow1)"/>
-          <!-- stars -->
-          <circle cx="28" cy="28" r="1.1" fill="#fff" opacity="0.55"/>
-          <circle cx="52" cy="18" r="0.8" fill="#fff" opacity="0.4"/>
-          <circle cx="132" cy="24" r="1" fill="#fff" opacity="0.5"/>
-          <circle cx="148" cy="38" r="0.7" fill="#fff" opacity="0.35"/>
-          <circle cx="16" cy="52" r="0.6" fill="#fff" opacity="0.3"/>
-          <circle cx="142" cy="56" r="0.8" fill="#fff" opacity="0.4"/>
-          <circle cx="100" cy="14" r="0.9" fill="#fff" opacity="0.5"/>
-          <circle cx="65" cy="32" r="0.7" fill="#fff" opacity="0.35"/>
-          <!-- moon disc -->
-          <circle cx="80" cy="74" r="32" fill="#e8d890" opacity="0.9"/>
-          <circle cx="80" cy="74" r="30" fill="#f4e8a0"/>
-          <!-- craters/texture -->
-          <circle cx="72" cy="68" r="4" fill="#d8c870" opacity="0.38"/>
-          <circle cx="91" cy="77" r="3" fill="#d8c870" opacity="0.28"/>
-          <circle cx="75" cy="84" r="2.5" fill="#d8c870" opacity="0.32"/>
-          <circle cx="86" cy="64" r="2" fill="#d8c870" opacity="0.25"/>
-          <!-- moon face -->
-          <ellipse cx="75" cy="71" rx="3" ry="3.5" fill="#c0a840" opacity="0.72"/>
-          <ellipse cx="88" cy="71" rx="3" ry="3.5" fill="#c0a840" opacity="0.72"/>
-          <path d="M74 82 Q80 87 86 82" stroke="#c0a840" stroke-width="2" fill="none" stroke-linecap="round"/>
-          <!-- dew drops falling from moon -->
-          <circle cx="63" cy="108" r="2" fill="#c8d8f0" opacity="0.5"/>
-          <circle cx="78" cy="113" r="1.5" fill="#c8d8f0" opacity="0.4"/>
-          <circle cx="95" cy="107" r="2" fill="#c8d8f0" opacity="0.45"/>
-          <!-- winding path / road (centre) -->
-          <path d="M80 170 Q76 190 70 208 Q66 224 64 248" fill="none" stroke="#0f1c38" stroke-width="16"/>
-          <path d="M80 170 Q84 190 90 208 Q94 224 96 248" fill="none" stroke="#0f1c38" stroke-width="16"/>
-          <path d="M80 170 Q76 190 70 208 Q66 224 64 248" fill="none" stroke="#1a2840" stroke-width="12"/>
-          <path d="M80 170 Q84 190 90 208 Q94 224 96 248" fill="none" stroke="#1a2840" stroke-width="12"/>
-          <!-- water pool (bottom) -->
-          <ellipse cx="80" cy="248" rx="70" ry="13" fill="#0a1530"/>
-          <ellipse cx="80" cy="245" rx="56" ry="8" fill="#0c1a38" opacity="0.75"/>
-          <ellipse cx="80" cy="247" rx="34" ry="5" fill="none" stroke="#1e3060" stroke-width="0.8" opacity="0.5"/>
-          <!-- crayfish -->
-          <ellipse cx="80" cy="238" rx="10" ry="6.5" fill="#7a2020" opacity="0.85"/>
-          <path d="M70 237 Q64 230 59 225" stroke="#8a2828" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-          <path d="M90 237 Q96 230 101 225" stroke="#8a2828" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-          <path d="M73 235 Q68 226 66 219" stroke="#8a2828" stroke-width="1.5" fill="none"/>
-          <path d="M87 235 Q92 226 94 219" stroke="#8a2828" stroke-width="1.5" fill="none"/>
-          <circle cx="75" cy="236" r="1.5" fill="#c84040" opacity="0.7"/>
-          <circle cx="85" cy="236" r="1.5" fill="#c84040" opacity="0.7"/>
-          <!-- left tower -->
-          <rect x="10" y="150" width="22" height="82" rx="2" fill="#0d1830"/>
-          <rect x="10" y="142" width="4" height="10" rx="1" fill="#0d1830"/>
-          <rect x="16" y="142" width="4" height="10" rx="1" fill="#0d1830"/>
-          <rect x="22" y="142" width="4" height="10" rx="1" fill="#0d1830"/>
-          <rect x="18" y="166" width="8" height="11" rx="1" fill="#1a2848" opacity="0.8"/>
-          <rect x="18" y="184" width="8" height="8" rx="1" fill="#1a2848" opacity="0.5"/>
-          <!-- right tower -->
-          <rect x="128" y="150" width="22" height="82" rx="2" fill="#0d1830"/>
-          <rect x="128" y="142" width="4" height="10" rx="1" fill="#0d1830"/>
-          <rect x="134" y="142" width="4" height="10" rx="1" fill="#0d1830"/>
-          <rect x="140" y="142" width="4" height="10" rx="1" fill="#0d1830"/>
-          <rect x="134" y="166" width="8" height="11" rx="1" fill="#1a2848" opacity="0.8"/>
-          <rect x="134" y="184" width="8" height="8" rx="1" fill="#1a2848" opacity="0.5"/>
-          <!-- hills behind towers -->
-          <path d="M0 182 Q22 156 44 164 Q55 156 58 168 L58 260 L0 260 Z" fill="#0a1428"/>
-          <path d="M160 182 Q138 156 116 164 Q105 156 102 168 L102 260 L160 260 Z" fill="#0a1428"/>
-          <!-- dog (left, howling) -->
-          <circle cx="44" cy="200" r="8.5" fill="#192838"/>
-          <path d="M36 222 Q39 210 44 200" stroke="#192838" stroke-width="7" stroke-linecap="round" fill="none"/>
-          <path d="M44 192 Q47 182 45 178" stroke="#192838" stroke-width="4.5" stroke-linecap="round" fill="none"/>
-          <path d="M51 218 Q60 207 58 199" stroke="#192838" stroke-width="3" stroke-linecap="round" fill="none"/>
-          <path d="M37 196 Q34 188 38 193" fill="#192838"/>
-          <!-- wolf (right, howling) -->
-          <circle cx="116" cy="198" r="10" fill="#141e2e"/>
-          <path d="M108 222 Q111 209 116 198" stroke="#141e2e" stroke-width="8" stroke-linecap="round" fill="none"/>
-          <path d="M116 189 Q120 179 118 174" stroke="#141e2e" stroke-width="5" stroke-linecap="round" fill="none"/>
-          <path d="M109 194 Q104 186 108 191" fill="#141e2e"/>
-          <path d="M123 194 Q128 186 124 191" fill="#141e2e"/>
-          <path d="M123 218 Q134 203 130 195" stroke="#141e2e" stroke-width="4" stroke-linecap="round" fill="none"/>
-          <!-- roman numeral XVIII -->
-          <text x="80" y="253" text-anchor="middle" font-family="serif" font-size="11" fill="#ffffff35" letter-spacing="1">XVIII</text>
-        </svg>
-      </div>
-      <div class="card-position reversed">逆位置</div>
-      <div class="card-name-en">The Moon</div>
-      <div class="card-name-jp">月</div>
-      <div class="card-meaning">霧が晴れる・錯覚の解放<br>直視を避けてきたものが浮かぶ<br>不安の正体を問われる時</div>
-    </div>
-
-    <!-- Card 2: The Chariot 戦車 正位置 -->
-    <div class="card-wrap">
-      <div class="card-label">POSITION II</div>
-      <div class="card-label-jp">課題</div>
       <div class="card-svg-wrap">
         <svg width="160" height="260" viewBox="0 0 160 260" xmlns="http://www.w3.org/2000/svg">
           <defs>
-            <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#0c0e22"/>
-              <stop offset="100%" stop-color="#1a1c36"/>
+            <linearGradient id="bg1" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#06091e"/>
+              <stop offset="100%" stop-color="#101838"/>
             </linearGradient>
-            <linearGradient id="canopy2" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#2232b0"/>
-              <stop offset="100%" stop-color="#111868"/>
-            </linearGradient>
+            <radialGradient id="starGlow1" cx="50%" cy="22%" r="35%">
+              <stop offset="0%" stop-color="#c8d8ff" stop-opacity="0.45"/>
+              <stop offset="100%" stop-color="#06091e" stop-opacity="0"/>
+            </radialGradient>
           </defs>
-          <!-- background -->
-          <rect width="160" height="260" rx="12" fill="url(#bg2)"/>
-          <rect x="8" y="8" width="144" height="244" rx="9" fill="none" stroke="#ffffff12" stroke-width="1"/>
-          <!-- city skyline (background) -->
-          <rect x="16" y="162" width="14" height="42" fill="#0e1230" opacity="0.75"/>
-          <rect x="32" y="153" width="11" height="51" fill="#0e1230" opacity="0.65"/>
-          <rect x="47" y="167" width="13" height="37" fill="#0e1230" opacity="0.55"/>
-          <rect x="100" y="157" width="13" height="47" fill="#0e1230" opacity="0.65"/>
-          <rect x="116" y="165" width="11" height="39" fill="#0e1230" opacity="0.55"/>
-          <rect x="130" y="150" width="14" height="54" fill="#0e1230" opacity="0.75"/>
-          <!-- river ribbon -->
-          <rect x="0" y="197" width="160" height="18" fill="#10182e" opacity="0.55"/>
-          <!-- stars in sky -->
-          <circle cx="24" cy="24" r="1.2" fill="#d8d0ff" opacity="0.8"/>
-          <circle cx="42" cy="17" r="0.8" fill="#d8d0ff" opacity="0.6"/>
-          <circle cx="64" cy="27" r="1" fill="#d8d0ff" opacity="0.7"/>
-          <circle cx="88" cy="19" r="0.9" fill="#d8d0ff" opacity="0.65"/>
-          <circle cx="112" cy="14" r="1.1" fill="#d8d0ff" opacity="0.75"/>
-          <circle cx="134" cy="22" r="0.8" fill="#d8d0ff" opacity="0.6"/>
-          <circle cx="150" cy="32" r="1" fill="#d8d0ff" opacity="0.7"/>
-          <circle cx="16" cy="44" r="0.7" fill="#d8d0ff" opacity="0.5"/>
-          <circle cx="152" cy="46" r="0.7" fill="#d8d0ff" opacity="0.5"/>
-          <circle cx="76" cy="34" r="0.8" fill="#d8d0ff" opacity="0.55"/>
-          <circle cx="48" cy="38" r="0.6" fill="#d8d0ff" opacity="0.45"/>
-          <!-- canopy poles -->
-          <line x1="28" y1="47" x2="28" y2="92" stroke="#c8b060" stroke-width="3"/>
-          <line x1="132" y1="47" x2="132" y2="92" stroke="#c8b060" stroke-width="3"/>
-          <!-- canopy top bar -->
-          <rect x="22" y="43" width="116" height="5" rx="2" fill="#2232b0" opacity="0.6"/>
-          <!-- canopy fabric -->
-          <rect x="28" y="47" width="104" height="45" rx="2" fill="url(#canopy2)" opacity="0.88"/>
-          <!-- star pattern on canopy -->
-          <circle cx="52" cy="68" r="3" fill="#c8d0ff" opacity="0.65"/>
-          <circle cx="80" cy="60" r="3.5" fill="#c8d0ff" opacity="0.72"/>
-          <circle cx="108" cy="68" r="3" fill="#c8d0ff" opacity="0.65"/>
-          <circle cx="66" cy="82" r="2.5" fill="#c8d0ff" opacity="0.5"/>
-          <circle cx="94" cy="82" r="2.5" fill="#c8d0ff" opacity="0.5"/>
-          <!-- armored lower body (between canopy legs) -->
-          <rect x="58" y="150" width="44" height="44" rx="3" fill="#1a3062" stroke="#4060a0" stroke-width="1"/>
-          <!-- armor horizontal lines -->
-          <line x1="58" y1="161" x2="102" y2="161" stroke="#4060a0" stroke-width="0.8" opacity="0.6"/>
-          <line x1="58" y1="172" x2="102" y2="172" stroke="#4060a0" stroke-width="0.8" opacity="0.6"/>
-          <line x1="58" y1="183" x2="102" y2="183" stroke="#4060a0" stroke-width="0.8" opacity="0.6"/>
-          <!-- breastplate -->
-          <rect x="60" y="112" width="40" height="40" rx="4" fill="#1a346a" stroke="#4868b8" stroke-width="1.5"/>
-          <!-- crescent moons on shoulders -->
-          <path d="M54 120 Q46 127 54 133 Q50 130 50 127 Q50 124 54 120 Z" fill="#d4c060"/>
-          <path d="M106 120 Q114 127 106 133 Q110 130 110 127 Q110 124 106 120 Z" fill="#d4c060"/>
-          <!-- wheel symbol on chest -->
-          <circle cx="80" cy="130" r="8" fill="none" stroke="#c8b040" stroke-width="1.5"/>
-          <circle cx="80" cy="130" r="3" fill="#c8b040" opacity="0.7"/>
-          <line x1="80" y1="122" x2="80" y2="119" stroke="#c8b040" stroke-width="1.3"/>
-          <line x1="80" y1="138" x2="80" y2="141" stroke="#c8b040" stroke-width="1.3"/>
-          <line x1="72" y1="130" x2="69" y2="130" stroke="#c8b040" stroke-width="1.3"/>
-          <line x1="88" y1="130" x2="91" y2="130" stroke="#c8b040" stroke-width="1.3"/>
-          <line x1="74" y1="124" x2="72" y2="122" stroke="#c8b040" stroke-width="1.1"/>
-          <line x1="86" y1="124" x2="88" y2="122" stroke="#c8b040" stroke-width="1.1"/>
-          <line x1="74" y1="136" x2="72" y2="138" stroke="#c8b040" stroke-width="1.1"/>
-          <line x1="86" y1="136" x2="88" y2="138" stroke="#c8b040" stroke-width="1.1"/>
-          <!-- helmet -->
-          <circle cx="80" cy="102" r="13" fill="#1a3062" stroke="#4868b8" stroke-width="1.5"/>
-          <!-- helmet crest (red plume) -->
-          <path d="M69 93 Q80 78 91 93" fill="#8b1a1a" stroke="#a02020" stroke-width="1"/>
-          <path d="M75 91 Q80 80 85 91" fill="#c02828"/>
-          <!-- face -->
-          <circle cx="80" cy="104" r="9" fill="#d0b898"/>
-          <ellipse cx="76.5" cy="103" rx="1.5" ry="2.2" fill="#705030" opacity="0.75"/>
-          <ellipse cx="83.5" cy="103" rx="1.5" ry="2.2" fill="#705030" opacity="0.75"/>
-          <path d="M76.5 110 Q80 112 83.5 110" stroke="#a07040" stroke-width="1.1" fill="none" stroke-linecap="round"/>
-          <!-- arm holding wand/scepter (left) -->
-          <line x1="60" y1="122" x2="46" y2="140" stroke="#1a346a" stroke-width="7" stroke-linecap="round"/>
-          <!-- scepter -->
-          <line x1="46" y1="140" x2="36" y2="108" stroke="#9a8838" stroke-width="3" stroke-linecap="round"/>
-          <circle cx="35" cy="106" r="4.5" fill="#c8b040"/>
-          <!-- arm (right, reins) -->
-          <line x1="100" y1="122" x2="114" y2="140" stroke="#1a346a" stroke-width="7" stroke-linecap="round"/>
-          <!-- reins -->
-          <path d="M114 140 Q104 158 90 168 Q72 180 54 175" stroke="#8a7030" stroke-width="1.5" fill="none" stroke-dasharray="3,2"/>
-          <path d="M114 140 Q108 158 106 168 Q108 180 106 175" stroke="#8a7030" stroke-width="1.5" fill="none" stroke-dasharray="3,2"/>
-          <!-- chariot body -->
-          <rect x="36" y="186" width="88" height="22" rx="3" fill="#0e1a3a" stroke="#2838a8" stroke-width="1.5"/>
-          <!-- chariot decorative band -->
-          <line x1="36" y1="197" x2="124" y2="197" stroke="#2848a0" stroke-width="0.8" opacity="0.5"/>
-          <!-- left wheel -->
-          <circle cx="50" cy="216" r="17" fill="none" stroke="#2838a8" stroke-width="2.8"/>
-          <circle cx="50" cy="216" r="5" fill="#1a2860"/>
-          <line x1="50" y1="199" x2="50" y2="233" stroke="#2838a8" stroke-width="1.6"/>
-          <line x1="33" y1="216" x2="67" y2="216" stroke="#2838a8" stroke-width="1.6"/>
-          <line x1="38" y1="204" x2="62" y2="228" stroke="#2838a8" stroke-width="1.6"/>
-          <line x1="62" y1="204" x2="38" y2="228" stroke="#2838a8" stroke-width="1.6"/>
-          <!-- right wheel -->
-          <circle cx="110" cy="216" r="17" fill="none" stroke="#2838a8" stroke-width="2.8"/>
-          <circle cx="110" cy="216" r="5" fill="#1a2860"/>
-          <line x1="110" y1="199" x2="110" y2="233" stroke="#2838a8" stroke-width="1.6"/>
-          <line x1="93" y1="216" x2="127" y2="216" stroke="#2838a8" stroke-width="1.6"/>
-          <line x1="98" y1="204" x2="122" y2="228" stroke="#2838a8" stroke-width="1.6"/>
-          <line x1="122" y1="204" x2="98" y2="228" stroke="#2838a8" stroke-width="1.6"/>
-          <!-- black sphinx (left) -->
-          <ellipse cx="40" cy="170" rx="16" ry="10" fill="#060810"/>
-          <rect x="24" y="178" width="32" height="18" rx="2" fill="#060810"/>
-          <circle cx="40" cy="160" r="9" fill="#060810"/>
-          <path d="M33 157 Q35 149 40 153 Q35 155 33 157 Z" fill="#060810"/>
-          <path d="M47 157 Q45 149 40 153 Q45 155 47 157 Z" fill="#060810"/>
-          <ellipse cx="38" cy="160" rx="2" ry="2.5" fill="#202040" opacity="0.8"/>
-          <ellipse cx="44" cy="160" rx="2" ry="2.5" fill="#202040" opacity="0.8"/>
-          <!-- white sphinx (right) -->
-          <ellipse cx="120" cy="170" rx="16" ry="10" fill="#d8d0be"/>
-          <rect x="104" y="178" width="32" height="18" rx="2" fill="#d8d0be"/>
-          <circle cx="120" cy="160" r="9" fill="#d8d0be"/>
-          <path d="M113 157 Q115 149 120 153 Q115 155 113 157 Z" fill="#d8d0be"/>
-          <path d="M127 157 Q125 149 120 153 Q125 155 127 157 Z" fill="#d8d0be"/>
-          <ellipse cx="118" cy="160" rx="2" ry="2.5" fill="#403828" opacity="0.65"/>
-          <ellipse cx="124" cy="160" rx="2" ry="2.5" fill="#403828" opacity="0.65"/>
-          <!-- roman numeral VII -->
-          <text x="80" y="253" text-anchor="middle" font-family="serif" font-size="11" fill="#ffffff38" letter-spacing="2">VII</text>
+          <rect width="160" height="260" rx="12" fill="url(#bg1)"/>
+          <rect x="8" y="8" width="144" height="244" rx="9" fill="none" stroke="#ffffff10" stroke-width="1"/>
+          <ellipse cx="80" cy="56" rx="52" ry="42" fill="url(#starGlow1)"/>
+          <!-- 8-pointed central star -->
+          <g transform="translate(80,56)">
+            <polygon points="0,-26 4.5,-9 17,-17 9,-4 26,0 9,4 17,17 4.5,9 0,26 -4.5,9 -17,17 -9,4 -26,0 -9,-4 -17,-17 -4.5,-9" fill="#f4e040" opacity="0.9"/>
+            <circle r="7" fill="#fffce0"/>
+            <circle r="3.5" fill="#ffffff"/>
+          </g>
+          <!-- 7 smaller stars -->
+          <circle cx="32" cy="40" r="5.5" fill="#b8ccf0" opacity="0.75"/>
+          <circle cx="128" cy="36" r="5" fill="#b8ccf0" opacity="0.7"/>
+          <circle cx="20" cy="72" r="4.5" fill="#b8ccf0" opacity="0.65"/>
+          <circle cx="140" cy="68" r="4" fill="#b8ccf0" opacity="0.62"/>
+          <circle cx="52" cy="22" r="4" fill="#b8ccf0" opacity="0.65"/>
+          <circle cx="108" cy="24" r="4" fill="#b8ccf0" opacity="0.65"/>
+          <circle cx="144" cy="96" r="3.5" fill="#b8ccf0" opacity="0.55"/>
+          <!-- tiny background stars -->
+          <circle cx="18" cy="30" r="0.9" fill="#fff" opacity="0.45"/>
+          <circle cx="68" cy="14" r="0.8" fill="#fff" opacity="0.4"/>
+          <circle cx="148" cy="22" r="0.8" fill="#fff" opacity="0.42"/>
+          <circle cx="14" cy="52" r="0.7" fill="#fff" opacity="0.35"/>
+          <!-- green hills -->
+          <path d="M0 190 Q30 164 60 176 Q80 166 100 172 Q128 162 160 180 L160 260 L0 260 Z" fill="#0c2610"/>
+          <!-- pool of water -->
+          <ellipse cx="80" cy="248" rx="62" ry="12" fill="#0c1838"/>
+          <ellipse cx="80" cy="246" rx="46" ry="7.5" fill="#10203e" opacity="0.7"/>
+          <line x1="80" y1="250" x2="80" y2="258" stroke="#d8c840" stroke-width="1.5" opacity="0.25"/>
+          <!-- tree (right side) -->
+          <line x1="138" y1="148" x2="138" y2="182" stroke="#1e3a10" stroke-width="3"/>
+          <ellipse cx="138" cy="136" rx="11" ry="15" fill="#142a0c" opacity="0.88"/>
+          <!-- ibis bird on tree -->
+          <ellipse cx="146" cy="122" rx="5" ry="3" fill="#06091e" opacity="0.9"/>
+          <line x1="151" y1="122" x2="158" y2="119" stroke="#06091e" stroke-width="1.8" stroke-linecap="round"/>
+          <!-- kneeling figure -->
+          <path d="M54 230 Q50 214 52 196 Q56 184 64 178" stroke="#2040a0" stroke-width="10" stroke-linecap="round" fill="none"/>
+          <ellipse cx="66" cy="174" rx="9" ry="12" fill="#2040a0" opacity="0.85"/>
+          <circle cx="64" cy="161" r="8.5" fill="#d4b888"/>
+          <path d="M57 160 Q50 172 52 186" stroke="#8a5820" stroke-width="4.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+          <path d="M72 160 Q78 170 74 184" stroke="#8a5820" stroke-width="3.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+          <line x1="62" y1="175" x2="44" y2="194" stroke="#d4b888" stroke-width="5.5" stroke-linecap="round"/>
+          <line x1="70" y1="173" x2="88" y2="192" stroke="#d4b888" stroke-width="5.5" stroke-linecap="round"/>
+          <!-- left urn -->
+          <ellipse cx="38" cy="196" rx="6.5" ry="4.5" fill="#4060a8" opacity="0.9"/>
+          <rect x="34" y="196" width="9" height="11" rx="2" fill="#4060a8" opacity="0.9"/>
+          <path d="M37 207 Q33 218 30 230" stroke="#6088c8" stroke-width="2" fill="none" opacity="0.65"/>
+          <path d="M41 207 Q39 218 37 230" stroke="#6088c8" stroke-width="1.5" fill="none" opacity="0.5"/>
+          <!-- right urn -->
+          <ellipse cx="92" cy="193" rx="6.5" ry="4.5" fill="#4060a8" opacity="0.9"/>
+          <rect x="88" y="193" width="9" height="11" rx="2" fill="#4060a8" opacity="0.9"/>
+          <path d="M91 204 Q95 216 98 228" stroke="#6088c8" stroke-width="2" fill="none" opacity="0.65"/>
+          <path d="M95 204 Q97 216 94 228" stroke="#6088c8" stroke-width="1.5" fill="none" opacity="0.5"/>
+          <text x="80" y="253" text-anchor="middle" font-family="serif" font-size="11" fill="#ffffff35" letter-spacing="1">XVII</text>
         </svg>
       </div>
       <div class="card-position upright">正位置</div>
-      <div class="card-name-en">The Chariot</div>
-      <div class="card-name-jp">戦車</div>
-      <div class="card-meaning">意志力・前進・勝利への執着<br>手綱を握る力がある<br>でも向かう先は正しいか</div>
+      <div class="card-name-en">The Star</div>
+      <div class="card-name-jp">星</div>
+      <div class="card-meaning">希望・天啓・内なる光<br>その灯火は本物だ<br>でも星を眺めることと歩くことは別</div>
     </div>
 
-    <!-- Card 3: The Empress 女帝 正位置 -->
+    <!-- Card 2: The Devil 悪魔 逆位置 -->
+    <div class="card-wrap">
+      <div class="card-label">POSITION II</div>
+      <div class="card-label-jp">課題</div>
+      <div class="card-svg-wrap reversed">
+        <svg width="160" height="260" viewBox="0 0 160 260" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#0c0510"/>
+              <stop offset="100%" stop-color="#1c0c24"/>
+            </linearGradient>
+            <radialGradient id="flameGlow2" cx="50%" cy="72%" r="28%">
+              <stop offset="0%" stop-color="#c84808" stop-opacity="0.4"/>
+              <stop offset="100%" stop-color="#0c0510" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect width="160" height="260" rx="12" fill="url(#bg2)"/>
+          <rect x="8" y="8" width="144" height="244" rx="9" fill="none" stroke="#ffffff08" stroke-width="1"/>
+          <ellipse cx="80" cy="188" rx="56" ry="38" fill="url(#flameGlow2)"/>
+          <!-- inverted pentagram (faint) -->
+          <polygon points="80,42 96,88 48,60 112,60 64,88" fill="none" stroke="#6020a0" stroke-width="1.2" opacity="0.38"/>
+          <!-- bat wings -->
+          <path d="M58 96 Q20 72 12 100 Q18 82 36 90 Q48 88 58 100" fill="#1a0828" opacity="0.85"/>
+          <path d="M58 100 Q30 112 18 140 Q32 118 52 116 Q56 112 58 108" fill="#1a0828" opacity="0.75"/>
+          <path d="M102 96 Q140 72 148 100 Q142 82 124 90 Q112 88 102 100" fill="#1a0828" opacity="0.85"/>
+          <path d="M102 100 Q130 112 142 140 Q128 118 108 116 Q104 112 102 108" fill="#1a0828" opacity="0.75"/>
+          <!-- devil body -->
+          <ellipse cx="80" cy="108" rx="22" ry="26" fill="#2a0a38" opacity="0.9"/>
+          <!-- horns -->
+          <path d="M68 80 Q62 60 66 48" stroke="#3a1848" stroke-width="7" stroke-linecap="round" fill="none"/>
+          <path d="M92 80 Q98 60 94 48" stroke="#3a1848" stroke-width="7" stroke-linecap="round" fill="none"/>
+          <path d="M68 80 Q62 60 66 48" stroke="#502060" stroke-width="4" stroke-linecap="round" fill="none"/>
+          <path d="M92 80 Q98 60 94 48" stroke="#502060" stroke-width="4" stroke-linecap="round" fill="none"/>
+          <!-- devil head -->
+          <circle cx="80" cy="84" r="16" fill="#2a0a38"/>
+          <circle cx="80" cy="82" r="13" fill="#3a1048"/>
+          <ellipse cx="74" cy="81" rx="2.5" ry="3" fill="#e05020" opacity="0.75"/>
+          <ellipse cx="86" cy="81" rx="2.5" ry="3" fill="#e05020" opacity="0.75"/>
+          <path d="M74 90 Q80 93 86 90" stroke="#c04020" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          <!-- inverted star on forehead -->
+          <polygon points="80,70 81.5,74.5 86,74.5 82.5,77 84,82 80,79 76,82 77.5,77 74,74.5 78.5,74.5" fill="#c82020" opacity="0.65"/>
+          <!-- arms -->
+          <line x1="60" y1="110" x2="46" y2="128" stroke="#2a0a38" stroke-width="9" stroke-linecap="round"/>
+          <line x1="100" y1="110" x2="114" y2="128" stroke="#2a0a38" stroke-width="9" stroke-linecap="round"/>
+          <!-- torch (right hand) -->
+          <line x1="114" y1="128" x2="118" y2="108" stroke="#6a4020" stroke-width="4" stroke-linecap="round"/>
+          <ellipse cx="118" cy="105" rx="5" ry="7" fill="#d06020" opacity="0.85"/>
+          <ellipse cx="118" cy="101" rx="3.5" ry="5" fill="#f08820" opacity="0.7"/>
+          <ellipse cx="118" cy="98" rx="2" ry="3.5" fill="#f8d040" opacity="0.6"/>
+          <!-- pedestal -->
+          <rect x="54" y="164" width="52" height="20" rx="3" fill="#1a0a28" stroke="#380c50" stroke-width="1.2"/>
+          <rect x="50" y="182" width="60" height="8" rx="2" fill="#220c34" stroke="#380c50" stroke-width="1"/>
+          <!-- left chained figure -->
+          <circle cx="52" cy="162" r="7.5" fill="#180828" opacity="0.9"/>
+          <path d="M52 169 Q52 174 54 182" stroke="#6040a0" stroke-width="1.5" fill="none" stroke-dasharray="2,1.5"/>
+          <rect x="46" y="176" width="12" height="16" rx="3" fill="#180828" opacity="0.85"/>
+          <path d="M47 192 Q46 202 45 212" stroke="#180828" stroke-width="6" stroke-linecap="round" fill="none"/>
+          <path d="M57 192 Q58 202 59 212" stroke="#180828" stroke-width="6" stroke-linecap="round" fill="none"/>
+          <path d="M48 162 Q46 156 48 152" stroke="#2a1040" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+          <!-- right chained figure -->
+          <circle cx="108" cy="162" r="7.5" fill="#180828" opacity="0.9"/>
+          <path d="M108 169 Q108 174 106 182" stroke="#6040a0" stroke-width="1.5" fill="none" stroke-dasharray="2,1.5"/>
+          <rect x="102" y="176" width="12" height="16" rx="3" fill="#180828" opacity="0.85"/>
+          <path d="M103 192 Q102 202 101 212" stroke="#180828" stroke-width="6" stroke-linecap="round" fill="none"/>
+          <path d="M113 192 Q114 202 115 212" stroke="#180828" stroke-width="6" stroke-linecap="round" fill="none"/>
+          <path d="M112 192 Q118 200 116 208" stroke="#2a1040" stroke-width="2" stroke-linecap="round" fill="none"/>
+          <!-- ground -->
+          <rect x="12" y="218" width="136" height="30" rx="4" fill="#120820" opacity="0.7"/>
+          <text x="80" y="253" text-anchor="middle" font-family="serif" font-size="11" fill="#ffffff28" letter-spacing="2">XV</text>
+        </svg>
+      </div>
+      <div class="card-position reversed">逆位置</div>
+      <div class="card-name-en">The Devil</div>
+      <div class="card-name-jp">悪魔</div>
+      <div class="card-meaning">束縛からの解放・鎖がゆるむ<br>でもその自由を使えているか<br>新たな鎖を自ら作っていないか</div>
+    </div>
+
+    <!-- Card 3: Judgement 審判 正位置 -->
     <div class="card-wrap">
       <div class="card-label">POSITION III</div>
       <div class="card-label-jp">アドバイス</div>
@@ -469,115 +377,93 @@
         <svg width="160" height="260" viewBox="0 0 160 260" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#0d2008"/>
-              <stop offset="100%" stop-color="#1a3212"/>
+              <stop offset="0%" stop-color="#080e2a"/>
+              <stop offset="55%" stop-color="#182048"/>
+              <stop offset="100%" stop-color="#3a2808"/>
             </linearGradient>
-            <radialGradient id="skyGlow3" cx="50%" cy="20%" r="50%">
-              <stop offset="0%" stop-color="#2a5820" stop-opacity="0.5"/>
-              <stop offset="100%" stop-color="#0d2008" stop-opacity="0"/>
+            <radialGradient id="angelGlow3" cx="50%" cy="28%" r="38%">
+              <stop offset="0%" stop-color="#f0c860" stop-opacity="0.28"/>
+              <stop offset="100%" stop-color="#080e2a" stop-opacity="0"/>
             </radialGradient>
           </defs>
-          <!-- background -->
           <rect width="160" height="260" rx="12" fill="url(#bg3)"/>
           <rect x="8" y="8" width="144" height="244" rx="9" fill="none" stroke="#ffffff10" stroke-width="1"/>
-          <!-- sky glow behind -->
-          <ellipse cx="80" cy="68" rx="68" ry="52" fill="url(#skyGlow3)"/>
-          <!-- sky strip (upper) -->
-          <rect x="12" y="12" width="136" height="72" rx="8" fill="#1c3848" opacity="0.5"/>
-          <!-- 12 stars in sky (crown motif) -->
-          <circle cx="36" cy="30" r="1.3" fill="#f8e840" opacity="0.8"/>
-          <circle cx="50" cy="22" r="1.1" fill="#f8e840" opacity="0.75"/>
-          <circle cx="65" cy="18" r="1.3" fill="#f8e840" opacity="0.8"/>
-          <circle cx="80" cy="15" r="1.5" fill="#f8e840" opacity="0.9"/>
-          <circle cx="95" cy="18" r="1.3" fill="#f8e840" opacity="0.8"/>
-          <circle cx="110" cy="22" r="1.1" fill="#f8e840" opacity="0.75"/>
-          <circle cx="124" cy="30" r="1.3" fill="#f8e840" opacity="0.8"/>
-          <circle cx="30" cy="42" r="1" fill="#f8e840" opacity="0.6"/>
-          <circle cx="42" cy="52" r="0.9" fill="#f8e840" opacity="0.55"/>
-          <circle cx="130" cy="42" r="1" fill="#f8e840" opacity="0.6"/>
-          <circle cx="118" cy="52" r="0.9" fill="#f8e840" opacity="0.55"/>
-          <circle cx="80" cy="28" r="1" fill="#f8e840" opacity="0.65"/>
-          <!-- forest trees (background) -->
-          <path d="M0 128 Q18 100 36 112 Q52 92 68 106 Q80 94 92 108 Q108 94 124 108 Q142 94 160 110 L160 260 L0 260 Z" fill="#0c2010"/>
-          <!-- waterfall (right edge, subtle) -->
-          <path d="M140 78 Q142 118 140 158" stroke="#4080b0" stroke-width="2.5" fill="none" opacity="0.35"/>
-          <path d="M143 80 Q145 120 143 158" stroke="#70a0c8" stroke-width="1.2" fill="none" opacity="0.25"/>
-          <ellipse cx="142" cy="162" rx="9" ry="4.5" fill="#2050a0" opacity="0.25"/>
-          <!-- wheat stalks (left) -->
-          <line x1="18" y1="178" x2="18" y2="150" stroke="#c8a028" stroke-width="1.5"/>
-          <ellipse cx="18" cy="148" rx="3" ry="5.5" fill="#c8a028" opacity="0.8"/>
-          <line x1="24" y1="182" x2="24" y2="153" stroke="#c8a028" stroke-width="1.5"/>
-          <ellipse cx="24" cy="151" rx="3" ry="5.5" fill="#c8a028" opacity="0.75"/>
-          <line x1="30" y1="178" x2="30" y2="150" stroke="#c8a028" stroke-width="1.5"/>
-          <ellipse cx="30" cy="148" rx="3" ry="5.5" fill="#c8a028" opacity="0.7"/>
-          <line x1="22" y1="175" x2="14" y2="167" stroke="#c8a028" stroke-width="1" fill="none"/>
-          <line x1="28" y1="170" x2="20" y2="162" stroke="#c8a028" stroke-width="1" fill="none"/>
-          <!-- wheat stalks (right) -->
-          <line x1="128" y1="180" x2="128" y2="152" stroke="#c8a028" stroke-width="1.5"/>
-          <ellipse cx="128" cy="150" rx="3" ry="5.5" fill="#c8a028" opacity="0.75"/>
-          <line x1="134" y1="178" x2="134" y2="150" stroke="#c8a028" stroke-width="1.5"/>
-          <ellipse cx="134" cy="148" rx="3" ry="5.5" fill="#c8a028" opacity="0.8"/>
-          <line x1="132" y1="170" x2="140" y2="162" stroke="#c8a028" stroke-width="1" fill="none"/>
-          <!-- cushioned throne / seat -->
-          <rect x="28" y="180" width="104" height="48" rx="6" fill="#8a3020" opacity="0.78"/>
-          <rect x="30" y="182" width="100" height="44" rx="5" fill="#a04028" opacity="0.65"/>
-          <path d="M28 194 Q80 188 132 194" stroke="#c06040" stroke-width="1" fill="none" opacity="0.5"/>
-          <path d="M28 206 Q80 200 132 206" stroke="#c06040" stroke-width="1" fill="none" opacity="0.4"/>
-          <!-- robe / skirt (flowing blue) -->
-          <path d="M44 242 Q49 204 55 188 Q65 173 80 169 Q95 173 105 188 Q111 204 116 242 Z" fill="#2848a8"/>
-          <!-- pomegranate pattern on robe -->
-          <circle cx="64" cy="200" r="4" fill="#803040" opacity="0.48"/>
-          <circle cx="80" cy="194" r="4.5" fill="#803040" opacity="0.5"/>
-          <circle cx="96" cy="200" r="4" fill="#803040" opacity="0.48"/>
-          <circle cx="71" cy="215" r="3.5" fill="#803040" opacity="0.4"/>
-          <circle cx="89" cy="215" r="3.5" fill="#803040" opacity="0.4"/>
-          <!-- torso (upper gown) -->
-          <ellipse cx="80" cy="163" rx="19" ry="19" fill="#2848a8" opacity="0.9"/>
-          <!-- Venus symbol on chest -->
-          <circle cx="80" cy="158" r="7.5" fill="none" stroke="#d4c040" stroke-width="1.6"/>
-          <line x1="80" y1="165.5" x2="80" y2="173" stroke="#d4c040" stroke-width="1.6"/>
-          <line x1="75.5" y1="169" x2="84.5" y2="169" stroke="#d4c040" stroke-width="1.6"/>
-          <!-- arms -->
-          <line x1="61" y1="157" x2="46" y2="170" stroke="#d0b898" stroke-width="7.5" stroke-linecap="round"/>
-          <line x1="99" y1="157" x2="114" y2="164" stroke="#d0b898" stroke-width="7.5" stroke-linecap="round"/>
-          <!-- scepter in right hand -->
-          <line x1="114" y1="164" x2="122" y2="133" stroke="#8a7030" stroke-width="3.5" stroke-linecap="round"/>
-          <circle cx="123" cy="130" r="5.5" fill="#c8a820"/>
-          <circle cx="123" cy="130" r="2.5" fill="#f0d840"/>
-          <!-- head -->
-          <circle cx="80" cy="138" r="13.5" fill="#f0e0c8"/>
-          <!-- crown (star points) -->
-          <path d="M66 130 L68.5 120 L71.5 130" fill="#d4b828"/>
-          <path d="M73 128 L75.5 117 L78.5 128" fill="#d4b828"/>
-          <path d="M81.5 128 L84 117 L87 128" fill="#d4b828"/>
-          <path d="M89 129 L92 120 L94.5 130" fill="#d4b828"/>
-          <circle cx="68" cy="120" r="2.2" fill="#f8d838"/>
-          <circle cx="75.5" cy="117" r="2.2" fill="#f8d838"/>
-          <circle cx="80" cy="115" r="2.8" fill="#f8e038"/>
-          <circle cx="85" cy="117" r="2.2" fill="#f8d838"/>
-          <circle cx="93" cy="120" r="2.2" fill="#f8d838"/>
-          <!-- face -->
-          <ellipse cx="76" cy="138" rx="2" ry="2.5" fill="#705030" opacity="0.72"/>
-          <ellipse cx="84" cy="138" rx="2" ry="2.5" fill="#705030" opacity="0.72"/>
-          <path d="M76 146 Q80 149 84 146" stroke="#a07040" stroke-width="1.2" fill="none" stroke-linecap="round"/>
-          <!-- flowing golden hair -->
-          <path d="M67 136 Q62 150 60 167" stroke="#c89038" stroke-width="5.5" fill="none" stroke-linecap="round" opacity="0.7"/>
-          <path d="M93 136 Q98 150 100 167" stroke="#c89038" stroke-width="5.5" fill="none" stroke-linecap="round" opacity="0.7"/>
-          <!-- roman numeral III -->
-          <text x="80" y="253" text-anchor="middle" font-family="serif" font-size="11" fill="#ffffff35" letter-spacing="2">III</text>
+          <ellipse cx="80" cy="72" rx="60" ry="48" fill="url(#angelGlow3)"/>
+          <!-- clouds -->
+          <ellipse cx="28" cy="88" rx="28" ry="16" fill="#c8c4c0" opacity="0.55"/>
+          <ellipse cx="13" cy="88" rx="14" ry="10" fill="#d0ccc8" opacity="0.45"/>
+          <ellipse cx="44" cy="84" rx="18" ry="12" fill="#c8c4c0" opacity="0.5"/>
+          <ellipse cx="132" cy="88" rx="28" ry="16" fill="#c8c4c0" opacity="0.55"/>
+          <ellipse cx="147" cy="88" rx="14" ry="10" fill="#d0ccc8" opacity="0.45"/>
+          <ellipse cx="116" cy="84" rx="18" ry="12" fill="#c8c4c0" opacity="0.5"/>
+          <ellipse cx="80" cy="80" rx="30" ry="18" fill="#d8d4d0" opacity="0.38"/>
+          <!-- left wing -->
+          <path d="M64 68 Q30 52 18 76 Q28 60 46 68 Q56 64 64 72" fill="#f0ece8" opacity="0.82"/>
+          <path d="M64 72 Q32 88 24 112 Q38 92 56 90 Q60 84 64 80" fill="#e8e4e0" opacity="0.7"/>
+          <path d="M64 80 Q40 100 36 124 Q50 106 64 102 L64 90" fill="#e0dcd8" opacity="0.55"/>
+          <!-- right wing -->
+          <path d="M96 68 Q130 52 142 76 Q132 60 114 68 Q104 64 96 72" fill="#f0ece8" opacity="0.82"/>
+          <path d="M96 72 Q128 88 136 112 Q122 92 104 90 Q100 84 96 80" fill="#e8e4e0" opacity="0.7"/>
+          <path d="M96 80 Q120 100 124 124 Q110 106 96 102 L96 90" fill="#e0dcd8" opacity="0.55"/>
+          <!-- angel body -->
+          <ellipse cx="80" cy="80" rx="16" ry="20" fill="#f0e8d8" opacity="0.9"/>
+          <path d="M64 88 Q66 102 68 112 Q72 108 80 108 Q88 108 92 112 Q94 102 96 88 Z" fill="#e8f0f8" opacity="0.85"/>
+          <!-- angel head -->
+          <circle cx="80" cy="62" r="12" fill="#f0e0c8"/>
+          <!-- halo -->
+          <circle cx="80" cy="58" r="14" fill="none" stroke="#f4c820" stroke-width="2.5" opacity="0.7"/>
+          <ellipse cx="76" cy="62" rx="1.8" ry="2.2" fill="#705030" opacity="0.7"/>
+          <ellipse cx="84" cy="62" rx="1.8" ry="2.2" fill="#705030" opacity="0.7"/>
+          <path d="M76 69 Q80 72 84 69" stroke="#a07040" stroke-width="1.1" fill="none" stroke-linecap="round"/>
+          <path d="M69 61 Q64 72 66 82" stroke="#c89030" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.7"/>
+          <path d="M91 61 Q96 72 94 82" stroke="#c89030" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.7"/>
+          <!-- trumpet -->
+          <line x1="88" y1="72" x2="128" y2="58" stroke="#d4a020" stroke-width="4.5" stroke-linecap="round"/>
+          <ellipse cx="130" cy="57" rx="8" ry="5" fill="#c89020" opacity="0.9"/>
+          <ellipse cx="138" cy="55" rx="7" ry="9" fill="none" stroke="#d4a020" stroke-width="2"/>
+          <!-- cross banner -->
+          <rect x="110" y="60" width="14" height="18" rx="1" fill="#c83020" opacity="0.82"/>
+          <line x1="117" y1="60" x2="117" y2="78" stroke="#fff" stroke-width="1.5" opacity="0.7"/>
+          <line x1="110" y1="67" x2="124" y2="67" stroke="#fff" stroke-width="1.5" opacity="0.7"/>
+          <!-- left arm -->
+          <line x1="72" y1="76" x2="52" y2="90" stroke="#f0e0c8" stroke-width="6" stroke-linecap="round"/>
+          <!-- ocean/water -->
+          <rect x="12" y="192" width="136" height="52" rx="4" fill="#0a1830" opacity="0.9"/>
+          <path d="M12 204 Q32 198 52 204 Q72 210 92 204 Q112 198 132 204 Q148 210 148 204" stroke="#1e3860" stroke-width="1.5" fill="none" opacity="0.6"/>
+          <path d="M12 214 Q32 208 52 214 Q72 220 92 214 Q112 208 132 214 Q148 220 148 214" stroke="#1e3860" stroke-width="1.2" fill="none" opacity="0.5"/>
+          <!-- mountains -->
+          <path d="M12 196 Q40 172 68 190 L68 196 Z" fill="#0e2038" opacity="0.8"/>
+          <path d="M148 196 Q120 172 92 190 L92 196 Z" fill="#0e2038" opacity="0.8"/>
+          <!-- center figure rising (arms up) -->
+          <circle cx="80" cy="192" r="8.5" fill="#d4b880" opacity="0.85"/>
+          <rect x="73" y="199" width="14" height="18" rx="2" fill="#d4c8a0" opacity="0.75"/>
+          <line x1="73" y1="202" x2="62" y2="190" stroke="#d4b880" stroke-width="5" stroke-linecap="round"/>
+          <line x1="87" y1="202" x2="98" y2="190" stroke="#d4b880" stroke-width="5" stroke-linecap="round"/>
+          <!-- left figure -->
+          <circle cx="44" cy="198" r="7" fill="#c8a878" opacity="0.75"/>
+          <rect x="38" y="204" width="12" height="14" rx="2" fill="#c4ba98" opacity="0.65"/>
+          <line x1="38" y1="207" x2="30" y2="198" stroke="#c8a878" stroke-width="4" stroke-linecap="round"/>
+          <!-- right figure -->
+          <circle cx="116" cy="198" r="7" fill="#c8a878" opacity="0.75"/>
+          <rect x="110" y="204" width="12" height="14" rx="2" fill="#c4ba98" opacity="0.65"/>
+          <line x1="122" y1="207" x2="130" y2="198" stroke="#c8a878" stroke-width="4" stroke-linecap="round"/>
+          <!-- light rays -->
+          <line x1="80" y1="90" x2="80" y2="116" stroke="#f4d040" stroke-width="1.5" opacity="0.18"/>
+          <line x1="72" y1="88" x2="60" y2="114" stroke="#f4d040" stroke-width="1" opacity="0.13"/>
+          <line x1="88" y1="88" x2="100" y2="114" stroke="#f4d040" stroke-width="1" opacity="0.13"/>
+          <text x="80" y="253" text-anchor="middle" font-family="serif" font-size="11" fill="#ffffff35" letter-spacing="2">XX</text>
         </svg>
       </div>
       <div class="card-position upright">正位置</div>
-      <div class="card-name-en">The Empress</div>
-      <div class="card-name-jp">女帝</div>
-      <div class="card-meaning">豊かさ・創造・育む力<br>受け取ることを許す大地<br>満ちることが先、動くのはその後</div>
+      <div class="card-name-en">Judgement</div>
+      <div class="card-name-jp">審判</div>
+      <div class="card-meaning">覚醒・召喚・答える時が来た<br>これは招待ではなく呼び声<br>今こそ立ち上がる</div>
     </div>
 
   </div><!-- /cards-row -->
 
   <hr class="divider">
 
-  <!-- ── Readings by theme ── -->
   <div class="themes">
 
     <!-- 仕事・創作活動 -->
@@ -586,20 +472,20 @@
 
       <div class="reading-item">
         <div class="reading-role">状況 — Position I</div>
-        <div class="reading-card-name">月（逆位置）/ The Moon Rx</div>
-        <div class="reading-text">ずっと「なんとなく」で動いてきた部分が、ここにきて輪郭を持ち始めています。「準備が整ったら」「もう少し上手くなったら」——<strong>そう言い続けることで、自分が本当は何を恐れていたのか、もう隠せなくなってきていませんか</strong>。月の逆位置は霧が晴れる瞬間ですが、霧の向こうにあるのは期待だけではないかもしれない。</div>
+        <div class="reading-card-name">星（正位置）/ The Star</div>
+        <div class="reading-text">あなたの音楽という光は本物です——星はそれを疑いなく示しています。でも問いかけます：<strong>その光を信じているのに、今日まで何がそれを表に出せないでいるのか</strong>。「いつか輝く日のために」と星を眺め続けることが、実際には動かない言い訳になっていませんか。</div>
       </div>
 
       <div class="reading-item">
         <div class="reading-role">課題 — Position II</div>
-        <div class="reading-card-name">戦車（正位置）/ The Chariot</div>
-        <div class="reading-text">今、何かをやろうという意志の高まりを感じているなら、それは本物です。ただ戦車の問いはひとつ：<strong>その推進力は「本当にやりたいから」来ていますか、それとも「立ち止まることへの後ろめたさ」から逃げていますか</strong>。スピードは出ている。方向を問わずには走れません。</div>
+        <div class="reading-card-name">悪魔（逆位置）/ The Devil Rx</div>
+        <div class="reading-text">「時間がない」「自信がない」「もう少し準備が整ったら」——それらの鎖が今、ゆるんでいます。でも悪魔（逆）の問いは残酷です：<strong>鎖がなくなったとき、あなたは本当に自由に動けますか？それとも「まだ準備が足りない」という新しい鎖を、自分で作り出しますか</strong>。</div>
       </div>
 
       <div class="reading-item">
         <div class="reading-role">アドバイス — Position III</div>
-        <div class="reading-card-name">女帝（正位置）/ The Empress</div>
-        <div class="reading-text">女帝は植えた種が育つのをただ待ちます——急かさず、でも確かに育てる。今日の音楽との時間を「成果を出す時間」ではなく、<strong>「自分という土壌に水を返す時間」として確保できたなら、それが次の創作への本当の始まりになります</strong>。</div>
+        <div class="reading-card-name">審判（正位置）/ Judgement</div>
+        <div class="reading-text">審判のトランペットは言い訳を聞きません。これは招待ではなく、召喚です。「いつか音楽を」から「今日、音楽を」へ——<strong>たとえ5分でも、今日一つだけ、創作の実際の行動を起こしてみてください</strong>。それが新しい章の始まりです。</div>
       </div>
     </div>
 
@@ -609,20 +495,20 @@
 
       <div class="reading-item">
         <div class="reading-role">状況 — Position I</div>
-        <div class="reading-card-name">月（逆位置）/ The Moon Rx</div>
-        <div class="reading-text">「なんとなく重い」「眠れているのに疲れている」——その感覚の正体を、ぼんやりと分かってきていませんか。月の逆位置は錯覚が解ける時。<strong>「見ないようにしていた自分の状態」が、今朝の犬の散歩でも感じ取れたのではないでしょうか</strong>。</div>
+        <div class="reading-card-name">星（正位置）/ The Star</div>
+        <div class="reading-text">星のカードは枯渇の後の、静かな再生を示します。疲れていても、その奥に「まだここにいる」という灯火がある。ただ問います：<strong>「回復中」という状態を、今やるべきことから遠ざかるための盾にしていないでしょうか</strong>。</div>
       </div>
 
       <div class="reading-item">
         <div class="reading-role">課題 — Position II</div>
-        <div class="reading-card-name">戦車（正位置）/ The Chariot</div>
-        <div class="reading-text">体が少ししんどくても「やる」と決めて押し切ってきた場面が、最近ありませんでしたか。意志力で健康を管理しようとする戦車——<strong>走り続けることはできますが、御者の体力は有限です</strong>。「今日は休む」という決断も、戦車の選択肢のひとつです。</div>
+        <div class="reading-card-name">悪魔（逆位置）/ The Devil Rx</div>
+        <div class="reading-text">「疲れているから仕方ない」という自己免責が、少しずつ緩みかけています。悪魔（逆）は解放を示しますが、同時に問います——<strong>本当に疲れているのか、それとも「疲れているのが普通」という感覚にいつの間にか慣れてしまっていないか</strong>。</div>
       </div>
 
       <div class="reading-item">
         <div class="reading-role">アドバイス — Position III</div>
-        <div class="reading-card-name">女帝（正位置）/ The Empress</div>
-        <div class="reading-text">今日は足すより受け取る日です。朝の空気、隣の家の音、犬の体温——<strong>地方の暮らしの中にすでにある豊かさを、「受け取った」と認識するだけで、体の芯の緊張が一つほぐれていきます</strong>。</div>
+        <div class="reading-card-name">審判（正位置）/ Judgement</div>
+        <div class="reading-text">体と心からの声を、今朝の犬との散歩の中でどう感じましたか。審判は「正直に見よ」と告げます。<strong>その感覚を「怠け」と裁くのではなく、「今日の自分に何が必要か」という問いへの答えとして、素直に受け取ってみましょう</strong>。</div>
       </div>
     </div>
 
@@ -632,20 +518,20 @@
 
       <div class="reading-item">
         <div class="reading-role">状況 — Position I</div>
-        <div class="reading-card-name">月（逆位置）/ The Moon Rx</div>
-        <div class="reading-text">誰かとの関係の中で「なんとなく違う」と感じてきた何かが、今まさに言語化されようとしています。<strong>両親との距離感、音楽仲間への本音——「まあいいか」で流してきた違和感の正体を、そろそろ自分に正直に見てみる時ではありませんか</strong>。</div>
+        <div class="reading-card-name">星（正位置）/ The Star</div>
+        <div class="reading-text">星は美しい理想を照らします。でもその光が強すぎると、目の前にいる実際の相手の輪郭が見えにくくなることがある。<strong>「良い娘でいよう」「良い仲間でいよう」という理想の自分像が、相手との本当の距離を測れなくさせていませんか</strong>。</div>
       </div>
 
       <div class="reading-item">
         <div class="reading-role">課題 — Position II</div>
-        <div class="reading-card-name">戦車（正位置）/ The Chariot</div>
-        <div class="reading-text">関係をうまくコントロールしようとしていませんか——良い娘であろうとする、良い仲間であろうとする、そういう「御者」の顔。<strong>戦車は勝利を求めますが、人間関係で「勝つ」ことは、相手の何かを失わせることでもあります</strong>。手綱を少し緩める勇気が、今問われています。</div>
+        <div class="reading-card-name">悪魔（逆位置）/ The Devil Rx</div>
+        <div class="reading-text">関係性の中で感じてきた「なんとなく不自由」が解けてきています。でも悪魔（逆）の問いは続きます——<strong>その不自由から解放された後、あなたは次の関係の形を想像できていますか？自由になっても、どこへ向かうかを決めていなければ、また同じ鎖に戻ってしまいます</strong>。</div>
       </div>
 
       <div class="reading-item">
         <div class="reading-role">アドバイス — Position III</div>
-        <div class="reading-card-name">女帝（正位置）/ The Empress</div>
-        <div class="reading-text">女帝は裁かず、ただそこにいます。今日、誰か一人に対して「うまく見せること」をひとつ手放して、<strong>ありのままの状態でそばにいるだけで、関係はゆっくり、でも確かに豊かな方向へ動き始めます</strong>。</div>
+        <div class="reading-card-name">審判（正位置）/ Judgement</div>
+        <div class="reading-text">審判は「本当の自分で向き合え」という求めです。今日、誰か一人に対して、小さくていいので一つだけ正直でいてみましょう。<strong>その一言が、関係の次の章への扉になります</strong>。</div>
       </div>
     </div>
 
@@ -655,27 +541,27 @@
 
       <div class="reading-item">
         <div class="reading-role">状況 — Position I</div>
-        <div class="reading-card-name">月（逆位置）/ The Moon Rx</div>
-        <div class="reading-text">お金に対する「漠然とした不安」——具体的に何が心配なのかを言語化せずに、ただふわっと重く感じていませんか。月の逆位置はその霧が晴れる時。<strong>数字を直視することは怖いかもしれませんが、漠然とした不安より、実際の数字の方がずっと軽いはずです</strong>。</div>
+        <div class="reading-card-name">星（正位置）/ The Star</div>
+        <div class="reading-text">「なんとかなる」という星の感覚——それは信頼であり、同時に数字を見ないための楽観にもなりえます。<strong>星はお金の問題を解決しません。ただ「向かうべき方向」を示すだけです。漠然とした安心感の裏に、直視を避けている何かはないでしょうか</strong>。</div>
       </div>
 
       <div class="reading-item">
         <div class="reading-role">課題 — Position II</div>
-        <div class="reading-card-name">戦車（正位置）/ The Chariot</div>
-        <div class="reading-text">音楽活動への支出をめぐる葛藤を「節約か投資か」という勝ち負けで考えていませんか。<strong>戦車は目的地を問わず走ります——「何のためのお金か」という問いを立てないまま進むと、どこに着いても満足できません</strong>。</div>
+        <div class="reading-card-name">悪魔（逆位置）/ The Devil Rx</div>
+        <div class="reading-text">音楽活動への投資に感じてきた罪悪感という鎖が、今ゆるみかけています。でも問います——<strong>その罪悪感がなくなったとき、本当に何に使いたいかを、あなたはまだ言葉にできていますか？「使っていい」になっただけで、「何のために使うか」の哲学はまだこれからでは</strong>。</div>
       </div>
 
       <div class="reading-item">
         <div class="reading-role">アドバイス — Position III</div>
-        <div class="reading-card-name">女帝（正位置）/ The Empress</div>
-        <div class="reading-text">女帝の豊かさは「貯め込む」ものではなく「循環する」もの。<strong>今日、音楽のためだけに使うお金をひとつ「自分への投資」と名付け直してみましょう</strong>。それは消費ではなく、創造という源泉に水を戻す行為——そのひと言で、お金との関係が少し変わっていきます。</div>
+        <div class="reading-card-name">審判（正位置）/ Judgement</div>
+        <div class="reading-text">お金と一度、正面から向き合う覚悟を今日持ちましょう。通帳を開く、今月の収支をメモする——<strong>その一歩が、大きな覚醒につながります。音楽への支出を「召喚への応答」として意味づけたとき、お金の使い方に迷いが消えていきます</strong>。</div>
       </div>
     </div>
 
   </div><!-- /themes -->
 
   <footer>
-    <p>Daily Tarot Reading &mdash; 2026-06-19 &nbsp;|&nbsp; 月（XVIII）・戦車（VII）・女帝（III）</p>
+    <p>Daily Tarot Reading &mdash; 2026-06-19 &nbsp;|&nbsp; 星（XVII）・悪魔（XV）・審判（XX）</p>
   </footer>
 
 </div>
