@@ -172,19 +172,25 @@
       .card-label-row {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        gap: 12px;
         width: 100%;
       }
 
       .card-label {
         text-align: left;
+        white-space: nowrap;
+      }
+
+      .card-label-line {
+        flex: 1;
+        height: 1px;
+        background: #ddd;
       }
 
       .card-label-jp {
         text-align: right;
         margin-top: 0;
-        padding-left: 12px;
-        border-left: 1px solid #ddd;
+        white-space: nowrap;
       }
 
       .card-body {
@@ -297,6 +303,7 @@
     <div class="card-wrap">
       <div class="card-label-row">
         <div class="card-label">POSITION I</div>
+        <div class="card-label-line"></div>
         <div class="card-label-jp">状況</div>
       </div>
       <div class="card-body">
@@ -407,6 +414,7 @@
     <div class="card-wrap">
       <div class="card-label-row">
         <div class="card-label">POSITION II</div>
+        <div class="card-label-line"></div>
         <div class="card-label-jp">課題</div>
       </div>
       <div class="card-body">
@@ -497,6 +505,7 @@
     <div class="card-wrap">
       <div class="card-label-row">
         <div class="card-label">POSITION III</div>
+        <div class="card-label-line"></div>
         <div class="card-label-jp">アドバイス</div>
       </div>
       <div class="card-body">
