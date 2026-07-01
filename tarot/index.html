@@ -169,8 +169,22 @@
         align-items: flex-start;
       }
 
-      .card-label, .card-label-jp {
+      .card-label-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      .card-label {
         text-align: left;
+      }
+
+      .card-label-jp {
+        text-align: right;
+        margin-top: 0;
+        padding-left: 12px;
+        border-left: 1px solid #ddd;
       }
 
       .card-body {
@@ -281,8 +295,10 @@
 
     <!-- Card 1: 運命の輪 X 正位置 -->
     <div class="card-wrap">
-      <div class="card-label">POSITION I</div>
-      <div class="card-label-jp">状況</div>
+      <div class="card-label-row">
+        <div class="card-label">POSITION I</div>
+        <div class="card-label-jp">状況</div>
+      </div>
       <div class="card-body">
       <div class="card-svg-wrap">
         <svg width="160" height="260" viewBox="0 0 160 260" xmlns="http://www.w3.org/2000/svg">
@@ -389,8 +405,10 @@
 
     <!-- Card 2: 隠者 IX 逆位置 -->
     <div class="card-wrap">
-      <div class="card-label">POSITION II</div>
-      <div class="card-label-jp">課題</div>
+      <div class="card-label-row">
+        <div class="card-label">POSITION II</div>
+        <div class="card-label-jp">課題</div>
+      </div>
       <div class="card-body">
       <div class="card-svg-wrap reversed">
         <svg width="160" height="260" viewBox="0 0 160 260" xmlns="http://www.w3.org/2000/svg">
@@ -477,8 +495,10 @@
 
     <!-- Card 3: 審判 XX 正位置 -->
     <div class="card-wrap">
-      <div class="card-label">POSITION III</div>
-      <div class="card-label-jp">アドバイス</div>
+      <div class="card-label-row">
+        <div class="card-label">POSITION III</div>
+        <div class="card-label-jp">アドバイス</div>
+      </div>
       <div class="card-body">
       <div class="card-svg-wrap">
         <svg width="160" height="260" viewBox="0 0 160 260" xmlns="http://www.w3.org/2000/svg">
