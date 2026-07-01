@@ -18,7 +18,7 @@
     }
 
     .container {
-      max-width: 860px;
+      max-width: 1240px;
       margin: 0 auto;
     }
 
@@ -138,8 +138,12 @@
 
     .themes {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px 48px;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px 28px;
+    }
+
+    @media (max-width: 1100px) {
+      .themes { grid-template-columns: 1fr 1fr; gap: 40px 32px; }
     }
 
     @media (max-width: 600px) {
@@ -149,7 +153,7 @@
     .theme-block {
       background: #fff;
       border-radius: 12px;
-      padding: 28px 28px 32px;
+      padding: 24px 22px 28px;
       box-shadow: 0 2px 12px rgba(0,0,0,0.05);
     }
 
@@ -165,10 +169,11 @@
 
     .theme-title .icon {
       margin-right: 6px;
+      color: var(--accent, #999);
     }
 
     .reading-item {
-      margin-bottom: 16px;
+      margin-bottom: 18px;
     }
 
     .reading-item:last-child {
@@ -176,17 +181,32 @@
     }
 
     .reading-role {
-      font-size: 11px;
-      letter-spacing: 0.14em;
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+
+    .role-label {
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: var(--accent, #333);
+    }
+
+    .role-position {
+      font-size: 9px;
+      letter-spacing: 0.12em;
       color: #bbb;
-      margin-bottom: 3px;
+      text-transform: uppercase;
     }
 
     .reading-card-name {
-      font-size: 12px;
-      font-weight: 700;
-      color: #888;
-      margin-bottom: 5px;
+      font-size: 11px;
+      font-weight: 500;
+      color: #aaa;
+      margin-bottom: 6px;
+      letter-spacing: 0.02em;
     }
 
     .reading-text {
@@ -506,92 +526,92 @@
   <div class="themes">
 
     <!-- 仕事・創作活動 -->
-    <div class="theme-block">
+    <div class="theme-block" style="--accent:#8860c8;">
       <div class="theme-title"><span class="icon">✦</span>仕事・創作活動</div>
 
       <div class="reading-item">
-        <div class="reading-role">状況 — Position I</div>
+        <div class="reading-role"><span class="role-label">状況</span><span class="role-position">Position I</span></div>
         <div class="reading-card-name">運命の輪（正位置）/ Wheel of Fortune</div>
         <div class="reading-text">流れが動き出すタイミング。<strong>「やってみたい」が急に強くなる</strong>のは、輪が回っているから。</div>
       </div>
 
       <div class="reading-item">
-        <div class="reading-role">課題 — Position II</div>
+        <div class="reading-role"><span class="role-label">課題</span><span class="role-position">Position II</span></div>
         <div class="reading-card-name">隠者（逆位置）/ The Hermit Rx</div>
         <div class="reading-text">その灯、まだ自分の中だけで灯していませんか。<strong>完成を待って、外に出すのを先延ばしにしている。</strong></div>
       </div>
 
       <div class="reading-item">
-        <div class="reading-role">アドバイス — Position III</div>
+        <div class="reading-role"><span class="role-label">アドバイス</span><span class="role-position">Position III</span></div>
         <div class="reading-card-name">審判（正位置）/ Judgement</div>
         <div class="reading-text">今日中に、作りかけの一曲・一案を<strong>誰か一人にだけ</strong>見せる、または聴かせる。完璧である必要はない——輪が回っている今、動いたものだけが次のステージに乗ります。</div>
       </div>
     </div>
 
     <!-- 体調・メンタル -->
-    <div class="theme-block">
+    <div class="theme-block" style="--accent:#3a9a78;">
       <div class="theme-title"><span class="icon">✦</span>体調・メンタル</div>
 
       <div class="reading-item">
-        <div class="reading-role">状況 — Position I</div>
+        <div class="reading-role"><span class="role-label">状況</span><span class="role-position">Position I</span></div>
         <div class="reading-card-name">運命の輪（正位置）/ Wheel of Fortune</div>
         <div class="reading-text">コンディションの波が変わる節目。<strong>今の調子がそのまま続くとは限りません。</strong></div>
       </div>
 
       <div class="reading-item">
-        <div class="reading-role">課題 — Position II</div>
+        <div class="reading-role"><span class="role-label">課題</span><span class="role-position">Position II</span></div>
         <div class="reading-card-name">隠者（逆位置）/ The Hermit Rx</div>
         <div class="reading-text">一人で抱えることを「自己管理」と呼んでいませんか。<strong>実際は、閉じているだけかもしれません。</strong></div>
       </div>
 
       <div class="reading-item">
-        <div class="reading-role">アドバイス — Position III</div>
+        <div class="reading-role"><span class="role-label">アドバイス</span><span class="role-position">Position III</span></div>
         <div class="reading-card-name">審判（正位置）/ Judgement</div>
         <div class="reading-text">朝、犬と歩く数分の間に、今日の体調を<strong>ひとことだけ誰かにLINEする</strong>。整える必要はなく、言葉にして外へ出すだけでいい。波は、灯を自分の外に置いた瞬間に緩みます。</div>
       </div>
     </div>
 
     <!-- 人間関係 -->
-    <div class="theme-block">
+    <div class="theme-block" style="--accent:#d8607a;">
       <div class="theme-title"><span class="icon">✦</span>人間関係</div>
 
       <div class="reading-item">
-        <div class="reading-role">状況 — Position I</div>
+        <div class="reading-role"><span class="role-label">状況</span><span class="role-position">Position I</span></div>
         <div class="reading-card-name">運命の輪（正位置）/ Wheel of Fortune</div>
         <div class="reading-text">関係の巡りが変わるタイミング。<strong>連絡が来る、または途絶える</strong>——どちらも動きのサインです。</div>
       </div>
 
       <div class="reading-item">
-        <div class="reading-role">課題 — Position II</div>
+        <div class="reading-role"><span class="role-label">課題</span><span class="role-position">Position II</span></div>
         <div class="reading-card-name">隠者（逆位置）/ The Hermit Rx</div>
         <div class="reading-text">「今は一人でいい」が、<strong>連絡を避ける言い訳になっていませんか。</strong></div>
       </div>
 
       <div class="reading-item">
-        <div class="reading-role">アドバイス — Position III</div>
+        <div class="reading-role"><span class="role-label">アドバイス</span><span class="role-position">Position III</span></div>
         <div class="reading-card-name">審判（正位置）/ Judgement</div>
         <div class="reading-text">今日、返せていない<strong>ひとつのメッセージ</strong>だけ返信してください。長い言葉はいらない。輪が動いている今、放置した関係は次の巡りまで固定されます。</div>
       </div>
     </div>
 
     <!-- 金運・生活 -->
-    <div class="theme-block">
+    <div class="theme-block" style="--accent:#c89828;">
       <div class="theme-title"><span class="icon">✦</span>金運・生活</div>
 
       <div class="reading-item">
-        <div class="reading-role">状況 — Position I</div>
+        <div class="reading-role"><span class="role-label">状況</span><span class="role-position">Position I</span></div>
         <div class="reading-card-name">運命の輪（正位置）/ Wheel of Fortune</div>
         <div class="reading-text">お金の流れが変わる節目。<strong>入る・出るどちらかの動きが加速</strong>する時期です。</div>
       </div>
 
       <div class="reading-item">
-        <div class="reading-role">課題 — Position II</div>
+        <div class="reading-role"><span class="role-label">課題</span><span class="role-position">Position II</span></div>
         <div class="reading-card-name">隠者（逆位置）/ The Hermit Rx</div>
         <div class="reading-text">通帳や明細を見ないようにしていませんか。<strong>見えない不安の方が、実際の数字より重いものです。</strong></div>
       </div>
 
       <div class="reading-item">
-        <div class="reading-role">アドバイス — Position III</div>
+        <div class="reading-role"><span class="role-label">アドバイス</span><span class="role-position">Position III</span></div>
         <div class="reading-card-name">審判（正位置）/ Judgement</div>
         <div class="reading-text">今日、<strong>ひとつの数字だけ</strong>確認してください。直近の支出合計でも、口座残高でもいい。全部を整理しなくていい——灯を一つ、生活に向けるだけで十分です。</div>
       </div>
