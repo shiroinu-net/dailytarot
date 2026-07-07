@@ -4,7 +4,7 @@
 
 毎日、タロットリーディングのHTMLを自動生成し、GitHub Pages で公開する。
 
-公開URL: **https://shiroinu-net.github.io/dailytarot/tarot/**
+公開URL: **https://shiroinu-net.github.io/dailytarot/**（リポジトリルートの `index.html` が `tarot/` へリダイレクトする）
 
 ---
 
@@ -27,8 +27,7 @@
 
    確認箇所：`<title>` タグ内・`<div class="date">` 内（スラッシュ区切りでも確認）・`<footer>` 内。一箇所でもズレがあれば修正してからコミットする。
 
-5. コミット → フィーチャーブランチにプッシュ → PR作成 → squash merge で main にマージ
-6. `claude/tarot-reading-generator-mT5l5` ブランチにも main をマージして push する（GitHub Pages のデプロイ元がこのブランチのため）
+5. コミット → フィーチャーブランチにプッシュ → PR作成 → squash merge で main にマージ（GitHub Pages は main ブランチから直接デプロイされるため、追加のブランチ操作は不要）
 
 ### HTML仕様
 
@@ -50,21 +49,14 @@ git add tarot/index.html
 git commit -m "Daily tarot reading YYYY-MM-DD (カード名1・カード名2・カード名3)"
 git push -u origin <branch>
 
-# PR作成 → squash merge → main に反映
-# その後、Pages デプロイ用ブランチも更新
-git fetch origin claude/tarot-reading-generator-mT5l5
-git checkout claude/tarot-reading-generator-mT5l5
-git merge main --no-edit
-git push origin claude/tarot-reading-generator-mT5l5
-git checkout main
+# PR作成 → squash merge → main に反映（Pages は main から自動デプロイされる）
 ```
 
 ### 完了条件
 
 - `tarot/index.html` が今日の日付・カードの内容になっている
 - main ブランチにマージされている
-- `claude/tarot-reading-generator-mT5l5` ブランチにも反映されている
-- https://shiroinu-net.github.io/dailytarot/tarot/ に反映される状態
+- https://shiroinu-net.github.io/dailytarot/ に反映される状態
 
 ---
 
