@@ -4,25 +4,25 @@
 
 毎日、タロットリーディングのHTMLを自動生成し、GitHub Pages で公開する。
 
-公開URL: **https://shiroinu-net.github.io/dailytarot/**（リポジトリルートの `index.html` が `tarot/` へリダイレクトする）
+公開URL: **https://shiroinu-net.github.io/dailytarot/**（リポジトリルートの `index.html` がそのままリーディング本体。リダイレクトなし）
 
 ---
 
 ## 毎回実行するタスク
 
-**今日の日付（YYYY-MM-DD）でタロットリーディングを行い、`tarot/index.html` を更新して main にマージする。**
+**今日の日付（YYYY-MM-DD）でタロットリーディングを行い、リポジトリルートの `index.html` を更新して main にマージする。**
 
 ### 手順
 
-> ⚠️ **必須確認（手順 0）**: HTMLを書き始める前に、以下のコマンドで今日の JST 日付を取得し、その値を使う。`currentDate` システムコンテキストは古い値を返すことがあるため使わない。`tarot/index.html` に書かれている既存の日付・`git log` の日付も使わない。
+> ⚠️ **必須確認（手順 0）**: HTMLを書き始める前に、以下のコマンドで今日の JST 日付を取得し、その値を使う。`currentDate` システムコンテキストは古い値を返すことがあるため使わない。`index.html` に書かれている既存の日付・`git log` の日付も使わない。
 
 1. 今日の日付を **`TZ=Asia/Tokyo date +%Y-%m-%d`** で取得する（JST を正確に返す）。`date +%Y-%m-%d` は UTC のため使わない。`currentDate` は遅延があるため使わない
 2. 大アルカナ22枚からランダムに3枚選ぶ（状況・課題・アドバイス）
-3. `tarot/index.html` を以下の仕様でHTMLごと上書き生成する
+3. リポジトリルートの `index.html` を以下の仕様でHTMLごと上書き生成する
 4. **日付の確認（必須）**: HTML 生成後、以下のコマンドで日付が `currentDate` と一致しているか検証する。3箇所すべてに正しい日付が入っていること。
 
    ```bash
-   grep -n "20[0-9][0-9]-[0-9][0-9]-[0-9][0-9]" tarot/index.html
+   grep -n "20[0-9][0-9]-[0-9][0-9]-[0-9][0-9]" index.html
    ```
 
    確認箇所：`<title>` タグ内・`<div class="date">` 内（スラッシュ区切りでも確認）・`<footer>` 内。一箇所でもズレがあれば修正してからコミットする。
@@ -31,7 +31,7 @@
 
 ### HTML仕様
 
-- **ファイル**: `tarot/index.html` のみ。日付ファイル（`tarot/YYYY-MM-DD.html`）は作らない
+- **ファイル**: リポジトリルートの `index.html` のみ。日付ファイル（`YYYY-MM-DD.html`）は作らない。`tarot/index.html` は旧URL互換のためのリダイレクト用スタブなので触らない
 - **カード**: 3枚（状況 / 課題 / アドバイス）をランダムに選択
 - **正位置・逆位置**: 各カードにランダムで正位置／逆位置を割り当てる（50%ずつ）。逆位置はSVGラッパーに `class="card-svg-wrap reversed"` を付与してCSSで180°回転させる
 - **カード表示**: カード名の下に `<div class="card-position upright">正位置</div>` または `<div class="card-position reversed">逆位置</div>` バッジを表示し、さらに `<div class="card-meaning">` でそのカード・その正逆の意味概要を3行程度で表示する
@@ -39,13 +39,13 @@
 - **カード描画**: SVGで描画（各カードを160×260pxのSVGで）
 - **デザイン**: ライト背景（`#f9f7f4`）、Noto Sans JP、14px、余白多め
 - **強調**: リーディングテキスト内の重要なフレーズは `<strong>` タグで太字にする
-- **既存ファイルを参考に**: `tarot/index.html` の現在のスタイル・構造を踏襲する
+- **既存ファイルを参考に**: `index.html` の現在のスタイル・構造を踏襲する
 
 ### Git フロー
 
 ```
 # フィーチャーブランチで作業
-git add tarot/index.html
+git add index.html
 git commit -m "Daily tarot reading YYYY-MM-DD (カード名1・カード名2・カード名3)"
 git push -u origin <branch>
 
@@ -54,7 +54,7 @@ git push -u origin <branch>
 
 ### 完了条件
 
-- `tarot/index.html` が今日の日付・カードの内容になっている
+- リポジトリルートの `index.html` が今日の日付・カードの内容になっている
 - main ブランチにマージされている
 - https://shiroinu-net.github.io/dailytarot/ に反映される状態
 
@@ -143,4 +143,4 @@ git push -u origin <branch>
 | XX | Judgement | 審判 |
 | XXI | The World | 世界 |
 
-前回使ったカードは `tarot/index.html` のフッターや本文から読み取り、なるべく重複を避ける。
+前回使ったカードは `index.html` のフッターや本文から読み取り、なるべく重複を避ける。
