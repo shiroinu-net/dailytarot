@@ -12,25 +12,25 @@
       font-family: 'Noto Sans JP', sans-serif;
       font-size: 14px;
       line-height: 1.8;
-      background-color: #efe3c8;
+      background-color: #f4efe5;
       color: #2c2c2c;
       padding: 48px 24px 80px;
     }
 
-    /* 羊皮紙テクスチャ（細かい繊維ノイズ＋大きなムラ＋周縁の焼け） */
+    /* 羊皮紙テクスチャ（ごく薄い粒子＋白い抜け＋ベージュのムラ） */
     body::before {
       content: '';
       position: fixed;
       inset: 0;
       z-index: -1;
       pointer-events: none;
-      background-color: #efe3c8;
+      background-color: #f4efe5;
       background-image:
-        radial-gradient(ellipse at 50% 45%, rgba(255,248,230,0.55) 0%, rgba(255,248,230,0) 55%, rgba(120,80,30,0.22) 100%),
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.42 0 0 0 0 0.3 0 0 0 0 0.16 0.5 0 0 0 -0.18'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23f)'/%3E%3C/svg%3E"),
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='1600' preserveAspectRatio='none'%3E%3Cfilter id='b'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.006' numOctaves='4' seed='7' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.55 0 0 0 0 0.4 0 0 0 0 0.2 0.9 0 0 0 -0.32'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23b)'/%3E%3C/svg%3E");
-      background-size: cover, 300px 300px, cover;
-      background-repeat: no-repeat, repeat, no-repeat;
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' preserveAspectRatio='none'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' seed='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.5 0 0 0 0 0.42 0 0 0 0 0.3 0.22 0 0 0 -0.08'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23f)'/%3E%3C/svg%3E"),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='1600' preserveAspectRatio='none'%3E%3Cfilter id='w'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.01' numOctaves='4' seed='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1.1 0 0 0 -0.5'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23w)'/%3E%3C/svg%3E"),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='1600' preserveAspectRatio='none'%3E%3Cfilter id='b'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.007' numOctaves='4' seed='7' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.76 0 0 0 0 0.66 0 0 0 0 0.5 0.7 0 0 0 -0.3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23b)'/%3E%3C/svg%3E");
+      background-size: 300px 300px, cover, cover;
+      background-repeat: repeat, no-repeat, no-repeat;
     }
 
     .container {
